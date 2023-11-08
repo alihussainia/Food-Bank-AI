@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
+from annotated_text import annotated_text
 
 model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
@@ -50,5 +51,5 @@ def app():
         cls=np.argmax(predictions[0])
         prediction=sweden_food_banks_dict[cls]
         
-        st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)
+        st.write('Based on your donation level and food options, the most suitable NGO is '+ annotated_text(prediction,"", "#faf"))
 
