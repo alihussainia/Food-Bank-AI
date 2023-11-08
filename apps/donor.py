@@ -11,7 +11,7 @@ def predict_rating(model, df):
     
     return predictions_data['Label'][0]
 
-model = load_model("models/food_bank_model.pkl")
+model = load_model("food_banks_model.pkl")
 
 def app():
     st.header('Welcome to the Donors Section')

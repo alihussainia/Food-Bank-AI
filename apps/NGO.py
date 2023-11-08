@@ -9,7 +9,7 @@ def predict_rating(model, df):
     
     return predictions_data['Label'][0]
     
-model = load_model('models/donors_model.pkl')
+model = load_model('donors.pkl')
 
 def app():
     st.header('Welcome to the NGO Section')
