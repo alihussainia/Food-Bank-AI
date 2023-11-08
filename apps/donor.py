@@ -48,7 +48,7 @@ def app():
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict,verbose = 0)
         cls=np.argmax(predictions[0])
-        prediction=job_bank_dict[cls]
+        prediction=sweden_food_banks_dict[cls]
         
         st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)
 
