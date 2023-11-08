@@ -47,10 +47,10 @@ def app():
     if st.button('Find NGO'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
-        print(input_dict)
+        st,write(input_dict)
         predictions = model.predict(input_dict,verbose = 0)
         cls=np.argmax(predictions[0])
         prediction=sweden_food_banks_dict[cls]
         
-        st.write('Based on your donation level and food options, the most suitable NGO is '+ annotated_text(prediction,"", "#faf"))
+        st.write('Based on your donation level and food options, the most suitable NGO is '+ {annotated_text(prediction,"")})
 
