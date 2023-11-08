@@ -1,9 +1,11 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from tensorflow import keras
+from tensorflow.keras import models
 from dataset.sweden_job_banks import sweden_food_banks_dict 
 
-model = tf.keras.models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
+model = tensorflow.keras.models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
 def app():
     st.header('Welcome to the Donors Section')
