@@ -24,10 +24,9 @@ def app():
         selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies']
     
     features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0}
-    for i in selected_options:
-        v=i
-        i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10,min_value=0)
-        features[v]=i
+    for option in selected_options:
+        i = st.sidebar.number_input(label = str(option), value = 0, step=1, max_value=10,min_value=0)
+        features[option]=i
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Donation'])
 
