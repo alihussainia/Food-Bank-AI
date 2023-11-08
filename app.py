@@ -7,7 +7,7 @@ app = MultiApp()
 st.markdown("""
 # Food Bank
 
-Food Bank is a Counter Hunger initiative that is built in hackmaker's #buildwithai hackathon and aims to remove global hunger by connecting restuarants and bakeries to NGOs
+Food Bank is a Counter Hunger initiative with an aim to remove food wastage and proverty driven hunger issues by connecting food donors with food banks.
 
 """)
 
