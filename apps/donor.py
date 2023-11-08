@@ -22,7 +22,7 @@ def app():
     #To provide multi-select with select all option
     
     selected_options = st.multiselect("Select one or more options:",
-    ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Fruites', 'Veggies', 'State'])
+    ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Fruites', 'Veggies'])
     
     all_options = st.checkbox("Select all options")
  
@@ -32,13 +32,11 @@ def app():
     features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0,'State': ""}
     for i in selected_options:
         v=i
-        if v=='State':
-            text_inp = st.textbox("Enter State Code")
-            features['State']=text_inp
         i = st.sidebar.number_input(label = str(i), value = 0, step=1)
         features[v]=i
 
-        
+    text_inp = st.textbox("Enter State Code")
+    features['State']=text_inp
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Acceptance'])
 
