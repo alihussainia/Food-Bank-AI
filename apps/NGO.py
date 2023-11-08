@@ -1,16 +1,17 @@
 import streamlit as st
 import pandas as pd
 import pycaret
-#from pycaret.regression import load_model, predict_model
+from pycaret.regression import load_model, predict_model
 
-# #with st.echo(code_location='below'):
-# def predict_rating(model, df):
+
+#with st.echo(code_location='below'):
+def predict_rating(model, df):
     
-#     predictions_data = predict_model(estimator = model, data = df)
+    predictions_data = predict_model(estimator = model, data = df)
     
-#     return predictions_data['Label'][0]
+    return predictions_data['Label'][0]
     
-model = joblib.load('models/donors_model.pkl')
+model = load_model('models/donors_model.pkl')
 
 def app():
     st.header('Welcome to the NGO Section')
@@ -50,9 +51,10 @@ def app():
  
     if st.button('Find Donor'):
         
-        predictions = model.predict(features_df[:])
-        #prediction = predict_rating(model, features_df)
-        predictions = predictions[0].item()
+        #predictions = model.predict(features_df[:])
+        prediction = predict_rating(model, features_df)
+        
+        #predictions = predictions[0].item()
         
         st.write('Based on your acceptance level and food options, the most suitable donor is '+ str(prediction))
  
