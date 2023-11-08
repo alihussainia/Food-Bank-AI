@@ -1,0 +1,901 @@
+SeaFood,Poultry,Bakery,Dairy,Fruites,Veggies,State,Donors
+0,0,1,0,1,1,WV,Chef's Creations
+0,1,1,0,1,0,WI,The Daily Grind
+0,0,1,0,1,1,WI,The Daily Grind
+0,1,1,0,0,1,UT,Coastal Catch
+0,1,1,0,0,0,NJ,Gourmet Wheels
+0,1,0,0,1,1,AL,The Grand Grill
+1,1,1,1,1,1,RI,The Roost
+1,1,1,0,1,1,HI,Flavors of America
+1,0,0,0,0,0,OR,Fork & Knife Delights
+0,1,1,0,1,1,MA,The Rustic Spoon
+1,1,1,1,0,1,AL,The Grand Grill
+1,0,1,1,1,1,IL,Urban Eats
+0,1,0,0,0,0,WA,Appetite Express
+1,1,0,1,1,0,TN,Homestyle Haven
+0,1,1,0,0,1,ND,Farm-to-Table Fare
+1,1,1,1,1,0,WV,Chef's Creations
+1,0,0,0,1,1,WV,Chef's Creations
+0,0,1,0,1,0,SD,The Culinary Crossroads
+1,1,1,0,1,0,MO,Route 66 Diner
+0,1,1,1,1,0,WI,The Daily Grind
+1,0,1,1,0,0,AL,The Grand Grill
+0,1,0,0,1,1,VT,Bistro Bliss
+0,1,0,0,0,0,MS,Neighborhood Nosh
+1,0,1,0,1,0,OH,The Flaming Griddle
+0,1,1,0,0,1,ND,Farm-to-Table Fare
+1,0,1,0,1,0,MN,Hungry Nomad
+0,1,1,1,0,1,MO,Route 66 Diner
+1,0,1,0,0,1,MO,Route 66 Diner
+1,0,1,0,0,0,HI,Flavors of America
+0,1,1,0,0,0,ME,Street Food Sensations
+0,0,1,0,0,0,PA,Foodie Heaven
+1,1,0,0,0,1,LA,Coastal Cravings
+1,0,1,0,0,1,AK,Savory Bites Diner
+1,0,1,0,1,1,AL,The Grand Grill
+1,1,0,1,0,0,OK,Culinary Express
+0,0,0,0,1,1,MT,Spice Route Kitchen
+1,1,1,0,1,1,FL,Sunshine Diner
+0,1,1,0,1,1,SD,The Culinary Crossroads
+1,0,1,0,0,1,VT,Bistro Bliss
+1,0,1,0,1,0,MI,Palate Pleasers
+0,0,1,0,0,0,ND,Farm-to-Table Fare
+1,0,1,0,1,1,MS,Neighborhood Nosh
+0,0,1,1,0,1,AL,The Grand Grill
+1,1,1,1,1,1,SC,Fusion Flavors
+0,0,0,1,0,0,WY,Sunrise Breakfast Club
+0,1,1,0,1,0,VA,The Sizzling Skillet
+0,1,0,0,1,1,HI,Flavors of America
+0,1,1,0,0,0,PA,Foodie Heaven
+0,0,1,0,0,1,MT,Spice Route Kitchen
+1,1,1,1,1,1,VT,Bistro Bliss
+0,1,1,0,1,1,SC,Fusion Flavors
+1,1,1,1,0,0,HI,Flavors of America
+0,1,1,0,1,0,WI,The Daily Grind
+1,0,0,0,0,1,CA,Starry Platters
+0,1,1,0,0,1,LA,Coastal Cravings
+0,1,1,0,1,1,NJ,Gourmet Wheels
+0,0,0,1,1,1,RI,The Roost
+0,0,0,0,1,0,CA,Starry Platters
+1,1,0,0,0,0,MT,Spice Route Kitchen
+1,0,0,0,0,0,NJ,Gourmet Wheels
+0,0,1,1,1,0,NH,All-American Eats
+1,1,0,1,0,0,PA,Foodie Heaven
+0,1,1,0,1,1,AL,The Grand Grill
+0,0,1,0,0,0,IA,Fireside Grill
+1,1,0,0,1,0,AR,The Hungry House
+1,0,1,1,0,0,WY,Sunrise Breakfast Club
+1,1,1,1,1,1,OH,The Flaming Griddle
+0,1,1,0,1,1,NY,Harvest Moon Cafe
+1,1,1,0,0,0,MA,The Rustic Spoon
+0,1,1,1,1,0,WV,Chef's Creations
+0,1,0,1,1,1,GA,Chef's Table
+0,1,1,0,0,0,TN,Homestyle Haven
+0,1,0,0,0,1,AR,The Hungry House
+1,1,1,0,0,1,KY,Liberty Kitchen
+0,0,0,1,1,1,MA,The Rustic Spoon
+1,0,0,0,0,0,RI,The Roost
+1,0,1,0,1,0,HI,Flavors of America
+1,0,1,0,0,0,OR,Fork & Knife Delights
+1,1,1,0,0,0,VT,Bistro Bliss
+1,1,0,0,0,1,CT,The Gourmet Galley
+0,1,1,1,1,0,CT,The Gourmet Galley
+1,1,1,0,1,0,SC,Fusion Flavors
+1,0,1,1,1,0,SD,The Culinary Crossroads
+1,1,1,0,1,1,CA,Starry Platters
+0,0,1,0,1,1,FL,Sunshine Diner
+1,1,1,1,1,1,DE,Main Street Munchies
+1,1,1,0,1,0,CO,Tasty Junction
+1,1,1,0,1,1,WA,Appetite Express
+0,0,1,0,1,1,WI,The Daily Grind
+1,0,1,0,0,0,IA,Fireside Grill
+1,1,0,0,0,0,ID,Blue Plate Special
+1,0,1,0,1,1,NJ,Gourmet Wheels
+0,1,1,0,0,1,LA,Coastal Cravings
+1,0,0,0,0,0,OK,Culinary Express
+1,1,0,0,0,1,AZ,America's Delight
+1,0,0,0,1,1,NV,Fresh & Fast Bites
+0,1,1,0,0,1,IA,Fireside Grill
+1,1,1,1,1,0,PA,Foodie Heaven
+1,1,1,0,0,1,NE,Southern Smokehouse
+1,1,0,0,0,1,WA,Appetite Express
+0,1,1,1,1,0,KY,Liberty Kitchen
+1,1,1,0,0,0,ID,Blue Plate Special
+1,1,1,1,1,0,MI,Palate Pleasers
+1,1,1,0,1,1,TN,Homestyle Haven
+0,0,0,0,0,0,NJ,Gourmet Wheels
+1,0,1,1,0,0,FL,Sunshine Diner
+1,0,0,0,0,0,ID,Blue Plate Special
+0,1,1,0,0,0,CO,Tasty Junction
+0,0,1,1,0,1,IL,Urban Eats
+1,0,1,0,0,0,NM,Taste of Home
+0,1,1,0,1,0,HI,Flavors of America
+0,0,1,0,1,1,ME,Street Food Sensations
+1,0,1,1,0,0,NE,Southern Smokehouse
+0,0,0,0,0,1,OK,Culinary Express
+0,0,1,1,1,1,MA,The Rustic Spoon
+1,1,0,0,1,0,OK,Culinary Express
+0,0,1,0,1,0,IL,Urban Eats
+0,0,0,0,1,0,VT,Bistro Bliss
+0,1,1,0,1,1,AZ,America's Delight
+0,0,0,0,0,0,MN,Hungry Nomad
+1,1,1,1,1,1,NC,The Food Truck Fiesta
+1,1,1,0,0,0,CO,Tasty Junction
+1,1,0,1,0,1,AK,Savory Bites Diner
+0,1,1,0,1,1,SC,Fusion Flavors
+0,1,1,0,1,1,TX,The Daily Dish
+1,0,1,1,0,0,WY,Sunrise Breakfast Club
+1,0,1,0,1,0,WA,Appetite Express
+0,0,1,1,0,1,AR,The Hungry House
+0,0,1,0,0,0,KY,Liberty Kitchen
+0,1,1,1,1,0,ME,Street Food Sensations
+0,1,1,0,0,1,NE,Southern Smokehouse
+0,0,0,0,0,0,NY,Harvest Moon Cafe
+0,1,1,1,0,0,AR,The Hungry House
+1,1,1,1,1,0,ME,Street Food Sensations
+1,1,0,0,0,1,IN,Dine 'n Dash
+1,0,1,0,0,1,PA,Foodie Heaven
+1,1,1,1,1,1,MO,Route 66 Diner
+1,1,1,1,1,1,WY,Sunrise Breakfast Club
+1,0,1,0,1,1,SD,The Culinary Crossroads
+0,0,1,1,1,1,NC,The Food Truck Fiesta
+0,1,1,0,1,0,NV,Fresh & Fast Bites
+0,1,1,0,0,0,IL,Urban Eats
+1,1,1,1,1,1,NC,The Food Truck Fiesta
+1,0,0,1,1,1,NE,Southern Smokehouse
+0,0,0,0,0,0,FL,Sunshine Diner
+1,0,0,0,1,0,NV,Fresh & Fast Bites
+1,0,0,0,1,1,NM,Taste of Home
+0,0,0,0,1,1,CA,Starry Platters
+1,1,0,0,1,1,NM,Taste of Home
+0,1,1,0,1,1,MI,Palate Pleasers
+1,0,1,0,0,1,LA,Coastal Cravings
+0,0,0,0,0,0,OH,The Flaming Griddle
+0,0,1,1,1,0,KS,The Roaming Fork
+0,1,0,0,0,0,WV,Chef's Creations
+1,1,1,1,1,1,RI,The Roost
+0,0,1,0,1,0,IN,Dine 'n Dash
+0,0,1,0,1,1,UT,Coastal Catch
+1,1,0,1,0,0,IN,Dine 'n Dash
+0,1,0,0,0,0,CO,Tasty Junction
+1,0,1,0,0,1,AZ,America's Delight
+0,0,1,1,0,1,NM,Taste of Home
+0,1,1,0,1,0,CT,The Gourmet Galley
+1,1,1,0,1,1,WV,Chef's Creations
+0,0,0,0,1,0,OR,Fork & Knife Delights
+1,1,1,1,0,1,VA,The Sizzling Skillet
+0,1,1,0,1,1,ID,Blue Plate Special
+1,0,1,1,0,1,AL,The Grand Grill
+1,1,0,0,0,1,NC,The Food Truck Fiesta
+1,0,1,0,0,1,NY,Harvest Moon Cafe
+1,0,1,1,0,1,MT,Spice Route Kitchen
+0,1,1,0,1,1,NV,Fresh & Fast Bites
+0,0,1,1,1,0,IL,Urban Eats
+1,1,1,1,1,1,OK,Culinary Express
+1,0,0,1,0,0,WI,The Daily Grind
+0,0,0,1,0,1,OK,Culinary Express
+1,0,1,1,0,1,MS,Neighborhood Nosh
+0,0,0,0,1,1,WA,Appetite Express
+0,1,1,0,1,0,CO,Tasty Junction
+1,1,1,1,0,0,AK,Savory Bites Diner
+0,1,1,1,1,1,AR,The Hungry House
+1,0,1,0,1,0,PA,Foodie Heaven
+1,1,0,0,1,1,MD,Classic Comfort Cafe
+1,0,0,1,0,1,UT,Coastal Catch
+0,1,0,0,1,0,NC,The Food Truck Fiesta
+0,0,0,0,1,1,NC,The Food Truck Fiesta
+1,0,1,0,1,1,ND,Farm-to-Table Fare
+0,1,1,1,1,0,IA,Fireside Grill
+1,0,0,0,1,1,CT,The Gourmet Galley
+0,0,0,0,1,1,IA,Fireside Grill
+1,1,1,1,0,0,HI,Flavors of America
+1,1,1,0,1,0,CA,Starry Platters
+0,0,0,0,0,0,UT,Coastal Catch
+0,1,1,0,0,1,NJ,Gourmet Wheels
+0,0,1,0,1,1,MS,Neighborhood Nosh
+0,0,1,0,0,0,MI,Palate Pleasers
+1,0,1,0,0,0,MA,The Rustic Spoon
+0,0,0,0,0,1,VA,The Sizzling Skillet
+0,0,0,0,0,1,PA,Foodie Heaven
+1,1,1,0,0,1,CT,The Gourmet Galley
+0,1,0,0,0,1,KY,Liberty Kitchen
+1,1,1,1,1,1,WI,The Daily Grind
+1,0,1,0,1,0,IA,Fireside Grill
+0,1,1,0,1,0,NY,Harvest Moon Cafe
+0,0,1,0,1,0,IN,Dine 'n Dash
+1,0,1,0,0,0,GA,Chef's Table
+1,0,0,0,0,0,ND,Farm-to-Table Fare
+0,1,1,0,1,0,HI,Flavors of America
+1,0,1,0,0,1,MD,Classic Comfort Cafe
+0,1,0,1,1,0,OH,The Flaming Griddle
+0,0,0,0,0,1,MS,Neighborhood Nosh
+1,1,0,0,0,0,KS,The Roaming Fork
+1,1,1,0,1,1,ME,Street Food Sensations
+0,1,0,0,0,0,AR,The Hungry House
+0,1,1,1,1,1,TN,Homestyle Haven
+0,1,1,0,0,0,MA,The Rustic Spoon
+0,0,1,0,1,0,ND,Farm-to-Table Fare
+0,1,0,1,1,0,ND,Farm-to-Table Fare
+1,0,1,0,1,1,MO,Route 66 Diner
+1,0,0,0,0,0,NC,The Food Truck Fiesta
+1,1,1,0,1,0,SD,The Culinary Crossroads
+1,0,1,1,0,1,DE,Main Street Munchies
+1,1,0,0,0,1,MI,Palate Pleasers
+1,1,1,0,1,1,PA,Foodie Heaven
+0,0,0,0,1,0,TX,The Daily Dish
+1,1,0,0,0,0,DE,Main Street Munchies
+1,1,0,1,0,0,OR,Fork & Knife Delights
+0,0,1,0,0,1,CO,Tasty Junction
+1,0,1,1,0,0,MS,Neighborhood Nosh
+0,1,1,1,1,1,MT,Spice Route Kitchen
+1,1,1,1,1,1,AR,The Hungry House
+0,0,1,0,0,0,TN,Homestyle Haven
+0,0,1,0,0,1,NM,Taste of Home
+0,1,0,1,1,1,VA,The Sizzling Skillet
+0,0,1,0,1,0,LA,Coastal Cravings
+0,0,1,0,0,0,LA,Coastal Cravings
+0,0,1,0,0,0,PA,Foodie Heaven
+0,1,1,0,0,0,IN,Dine 'n Dash
+1,0,0,0,0,1,WY,Sunrise Breakfast Club
+0,0,1,1,1,1,NY,Harvest Moon Cafe
+1,0,1,1,0,1,MD,Classic Comfort Cafe
+0,0,1,0,0,0,AK,Savory Bites Diner
+1,1,0,0,0,1,AZ,America's Delight
+1,1,1,0,0,0,NE,Southern Smokehouse
+0,1,1,0,0,1,RI,The Roost
+1,1,1,0,1,1,TX,The Daily Dish
+0,0,1,0,0,0,AZ,America's Delight
+1,1,1,1,1,1,IL,Urban Eats
+0,1,1,1,1,1,OR,Fork & Knife Delights
+0,1,1,1,0,0,CT,The Gourmet Galley
+0,1,1,0,1,0,NV,Fresh & Fast Bites
+1,1,0,0,0,0,OR,Fork & Knife Delights
+1,0,0,0,0,0,CT,The Gourmet Galley
+1,1,1,0,0,0,VT,Bistro Bliss
+1,0,1,0,0,0,WY,Sunrise Breakfast Club
+1,1,0,0,0,1,CT,The Gourmet Galley
+1,1,1,1,1,1,TN,Homestyle Haven
+0,1,1,1,1,0,AL,The Grand Grill
+1,0,1,1,0,0,AR,The Hungry House
+1,0,0,0,1,1,NJ,Gourmet Wheels
+1,1,1,0,0,0,WI,The Daily Grind
+1,0,1,1,0,1,KS,The Roaming Fork
+0,1,1,0,0,0,NH,All-American Eats
+1,1,1,0,1,0,ND,Farm-to-Table Fare
+1,1,1,1,0,0,ND,Farm-to-Table Fare
+1,0,1,0,0,0,OR,Fork & Knife Delights
+0,0,0,0,0,0,IN,Dine 'n Dash
+0,0,1,0,0,0,IA,Fireside Grill
+0,0,0,0,0,1,FL,Sunshine Diner
+0,0,1,0,1,1,WY,Sunrise Breakfast Club
+0,1,0,1,1,1,SC,Fusion Flavors
+1,1,1,1,1,0,NH,All-American Eats
+0,1,0,0,0,1,MD,Classic Comfort Cafe
+0,0,1,0,1,0,TX,The Daily Dish
+1,0,0,0,0,1,NC,The Food Truck Fiesta
+1,1,1,0,0,0,IN,Dine 'n Dash
+1,0,1,1,0,0,MT,Spice Route Kitchen
+1,0,1,0,1,1,IN,Dine 'n Dash
+1,0,1,0,1,0,NE,Southern Smokehouse
+1,1,1,0,1,1,CO,Tasty Junction
+0,0,0,1,0,0,CT,The Gourmet Galley
+1,1,0,0,0,0,WY,Sunrise Breakfast Club
+1,1,1,0,1,0,CA,Starry Platters
+0,0,0,0,0,0,WY,Sunrise Breakfast Club
+1,1,1,0,0,0,TN,Homestyle Haven
+0,0,1,0,0,0,DE,Main Street Munchies
+1,0,1,0,1,1,MN,Hungry Nomad
+0,1,1,1,1,1,KY,Liberty Kitchen
+0,1,1,0,1,1,AR,The Hungry House
+0,0,0,0,0,1,IN,Dine 'n Dash
+1,0,1,1,0,1,SC,Fusion Flavors
+0,1,0,0,1,0,UT,Coastal Catch
+0,1,0,1,1,1,AZ,America's Delight
+1,0,0,1,0,0,CA,Starry Platters
+0,1,0,0,1,0,NE,Southern Smokehouse
+0,0,1,0,0,1,NC,The Food Truck Fiesta
+1,0,1,0,1,1,AR,The Hungry House
+1,0,1,0,0,0,WA,Appetite Express
+0,0,0,0,1,0,DE,Main Street Munchies
+1,1,1,0,0,0,SC,Fusion Flavors
+1,0,1,0,0,1,CT,The Gourmet Galley
+1,0,1,1,1,1,MO,Route 66 Diner
+1,0,0,0,0,1,WA,Appetite Express
+0,1,1,1,0,0,MS,Neighborhood Nosh
+1,1,0,0,1,0,OR,Fork & Knife Delights
+1,0,1,1,0,0,MD,Classic Comfort Cafe
+0,0,1,0,0,1,WA,Appetite Express
+1,1,0,0,1,0,NJ,Gourmet Wheels
+0,1,1,0,1,1,AL,The Grand Grill
+1,0,1,1,0,1,CA,Starry Platters
+0,1,1,1,0,1,SC,Fusion Flavors
+1,1,1,0,0,0,TN,Homestyle Haven
+1,1,1,0,1,0,CA,Starry Platters
+0,0,1,0,1,1,KS,The Roaming Fork
+1,0,1,1,1,1,GA,Chef's Table
+0,1,1,0,0,1,NJ,Gourmet Wheels
+1,0,1,1,0,0,CO,Tasty Junction
+0,1,1,0,0,1,PA,Foodie Heaven
+0,1,1,1,1,1,MD,Classic Comfort Cafe
+1,1,1,1,1,1,AZ,America's Delight
+0,1,1,0,1,1,NY,Harvest Moon Cafe
+0,1,1,0,1,1,MO,Route 66 Diner
+0,1,0,0,0,0,NM,Taste of Home
+0,0,1,0,0,1,OK,Culinary Express
+1,1,0,0,0,0,AL,The Grand Grill
+1,0,1,1,0,0,ID,Blue Plate Special
+0,0,0,0,0,1,OK,Culinary Express
+0,0,0,0,0,0,FL,Sunshine Diner
+1,0,1,0,1,0,KY,Liberty Kitchen
+0,0,1,0,1,0,NH,All-American Eats
+1,1,1,1,1,1,OR,Fork & Knife Delights
+0,1,1,0,0,1,SD,The Culinary Crossroads
+1,1,1,0,1,1,UT,Coastal Catch
+1,1,0,1,1,1,TX,The Daily Dish
+1,1,0,0,0,1,MS,Neighborhood Nosh
+0,0,1,1,1,0,GA,Chef's Table
+1,0,0,0,0,1,MT,Spice Route Kitchen
+0,0,0,0,1,0,IL,Urban Eats
+0,1,1,1,0,0,KY,Liberty Kitchen
+0,0,1,0,1,0,AK,Savory Bites Diner
+0,0,1,1,1,0,MN,Hungry Nomad
+1,0,1,0,0,1,VA,The Sizzling Skillet
+1,0,0,0,1,0,NJ,Gourmet Wheels
+0,1,0,0,1,1,KS,The Roaming Fork
+0,0,1,1,1,0,MA,The Rustic Spoon
+0,0,0,0,1,1,VA,The Sizzling Skillet
+0,0,0,0,1,0,CT,The Gourmet Galley
+1,1,1,1,1,1,MD,Classic Comfort Cafe
+1,0,1,0,0,0,CO,Tasty Junction
+1,1,1,0,0,1,MO,Route 66 Diner
+0,0,0,1,1,1,RI,The Roost
+1,0,0,0,1,1,WV,Chef's Creations
+0,0,0,0,0,1,MS,Neighborhood Nosh
+1,1,1,0,0,1,NE,Southern Smokehouse
+0,0,1,0,1,1,ND,Farm-to-Table Fare
+0,0,1,0,0,0,AR,The Hungry House
+0,1,0,0,0,0,ID,Blue Plate Special
+0,0,1,0,0,1,OH,The Flaming Griddle
+0,0,1,0,0,1,HI,Flavors of America
+1,1,1,0,1,1,CO,Tasty Junction
+0,1,0,1,1,0,WV,Chef's Creations
+1,1,1,1,0,0,NE,Southern Smokehouse
+0,1,1,0,0,0,MD,Classic Comfort Cafe
+1,0,1,1,0,1,MA,The Rustic Spoon
+0,1,1,1,1,0,SD,The Culinary Crossroads
+0,0,1,0,1,0,AK,Savory Bites Diner
+1,1,0,0,1,1,AR,The Hungry House
+1,1,1,1,1,1,NY,Harvest Moon Cafe
+1,1,1,1,0,1,OK,Culinary Express
+0,0,1,0,0,0,NV,Fresh & Fast Bites
+0,0,1,0,1,1,FL,Sunshine Diner
+0,1,1,0,0,1,IL,Urban Eats
+1,0,0,1,1,1,OH,The Flaming Griddle
+0,1,1,0,1,0,RI,The Roost
+1,0,0,0,0,1,OK,Culinary Express
+1,1,1,0,0,1,NH,All-American Eats
+0,1,1,1,1,0,MD,Classic Comfort Cafe
+0,1,1,0,0,1,MO,Route 66 Diner
+0,0,1,1,0,1,GA,Chef's Table
+0,0,1,0,0,1,KS,The Roaming Fork
+0,1,1,1,0,0,CA,Starry Platters
+1,0,1,0,1,1,IL,Urban Eats
+1,0,0,0,1,1,MD,Classic Comfort Cafe
+1,1,1,0,1,1,LA,Coastal Cravings
+1,1,1,0,1,0,IA,Fireside Grill
+1,0,0,0,0,0,LA,Coastal Cravings
+1,1,1,1,1,1,AL,The Grand Grill
+1,1,0,0,0,1,OH,The Flaming Griddle
+0,0,1,1,1,1,WY,Sunrise Breakfast Club
+1,1,0,1,0,0,VA,The Sizzling Skillet
+0,1,0,0,0,0,GA,Chef's Table
+0,1,1,1,0,1,AK,Savory Bites Diner
+0,1,0,1,0,0,VA,The Sizzling Skillet
+1,1,0,0,0,0,NC,The Food Truck Fiesta
+0,0,1,0,1,0,MA,The Rustic Spoon
+1,0,1,0,0,0,KY,Liberty Kitchen
+1,0,0,0,0,0,WV,Chef's Creations
+0,1,0,0,0,1,AL,The Grand Grill
+1,1,1,1,1,1,HI,Flavors of America
+1,1,1,0,0,0,SC,Fusion Flavors
+0,1,1,0,0,0,MI,Palate Pleasers
+0,1,1,0,1,1,TN,Homestyle Haven
+1,0,0,1,1,0,TX,The Daily Dish
+1,0,0,0,0,0,IA,Fireside Grill
+0,1,0,0,1,1,SC,Fusion Flavors
+0,0,0,0,1,0,CT,The Gourmet Galley
+0,1,1,1,1,1,NY,Harvest Moon Cafe
+1,1,0,0,0,0,MI,Palate Pleasers
+1,0,0,0,1,1,AZ,America's Delight
+0,0,0,0,0,0,MD,Classic Comfort Cafe
+0,1,1,0,1,1,VT,Bistro Bliss
+0,0,0,0,0,0,ME,Street Food Sensations
+1,1,1,0,0,0,NH,All-American Eats
+0,0,0,0,0,1,RI,The Roost
+0,1,0,0,1,1,GA,Chef's Table
+1,0,0,1,0,0,AR,The Hungry House
+1,1,1,0,1,0,CT,The Gourmet Galley
+0,1,1,0,0,1,AZ,America's Delight
+1,0,0,0,0,1,AL,The Grand Grill
+0,0,1,0,0,0,AK,Savory Bites Diner
+1,1,1,1,0,0,NH,All-American Eats
+1,1,0,1,1,1,MN,Hungry Nomad
+0,1,1,0,0,0,SC,Fusion Flavors
+0,0,1,0,0,1,ME,Street Food Sensations
+1,1,0,0,1,1,KS,The Roaming Fork
+0,0,1,1,0,1,SD,The Culinary Crossroads
+1,1,1,0,1,1,CO,Tasty Junction
+1,1,0,1,0,1,RI,The Roost
+1,0,1,0,0,1,PA,Foodie Heaven
+0,1,1,0,0,1,IN,Dine 'n Dash
+0,1,1,1,0,1,MS,Neighborhood Nosh
+1,1,1,0,1,1,NH,All-American Eats
+0,1,0,1,0,0,NY,Harvest Moon Cafe
+0,1,1,1,0,0,NM,Taste of Home
+1,0,1,0,1,0,WA,Appetite Express
+1,0,0,0,0,0,NV,Fresh & Fast Bites
+0,0,1,0,1,1,NH,All-American Eats
+1,1,0,0,0,1,WV,Chef's Creations
+0,0,0,1,1,1,PA,Foodie Heaven
+1,0,1,0,1,1,VA,The Sizzling Skillet
+1,1,1,0,1,0,MN,Hungry Nomad
+1,1,1,0,0,1,UT,Coastal Catch
+1,1,1,1,1,1,ND,Farm-to-Table Fare
+1,1,1,0,0,1,MD,Classic Comfort Cafe
+0,0,1,0,1,0,RI,The Roost
+0,1,1,0,1,0,TN,Homestyle Haven
+0,1,0,1,1,0,AL,The Grand Grill
+1,1,1,0,0,1,HI,Flavors of America
+0,0,0,0,0,1,ND,Farm-to-Table Fare
+1,1,1,1,1,1,VA,The Sizzling Skillet
+0,0,1,1,1,0,MO,Route 66 Diner
+0,0,0,0,0,1,VA,The Sizzling Skillet
+0,0,0,0,1,0,MA,The Rustic Spoon
+1,0,1,0,0,1,IA,Fireside Grill
+1,1,0,1,0,1,SD,The Culinary Crossroads
+0,1,1,0,0,1,ME,Street Food Sensations
+1,1,0,0,1,1,FL,Sunshine Diner
+1,0,1,0,1,1,MN,Hungry Nomad
+0,1,1,0,1,0,VA,The Sizzling Skillet
+1,0,1,0,0,0,KY,Liberty Kitchen
+0,1,1,0,1,1,ID,Blue Plate Special
+0,1,1,0,0,0,MI,Palate Pleasers
+1,0,1,1,1,0,WV,Chef's Creations
+1,1,1,0,0,1,MA,The Rustic Spoon
+0,1,1,0,0,0,NH,All-American Eats
+0,1,1,0,1,1,CA,Starry Platters
+1,1,0,0,1,0,LA,Coastal Cravings
+0,1,1,0,1,0,VA,The Sizzling Skillet
+0,0,1,1,1,1,MO,Route 66 Diner
+1,0,1,0,1,1,VT,Bistro Bliss
+0,0,0,0,0,0,AZ,America's Delight
+0,0,0,0,0,1,NV,Fresh & Fast Bites
+1,1,1,0,1,0,DE,Main Street Munchies
+0,1,1,0,1,0,UT,Coastal Catch
+1,1,1,0,0,0,MI,Palate Pleasers
+1,1,1,0,0,0,MT,Spice Route Kitchen
+0,0,0,0,1,0,PA,Foodie Heaven
+0,1,0,1,1,1,SD,The Culinary Crossroads
+0,1,1,1,1,1,NC,The Food Truck Fiesta
+0,0,1,1,0,1,IN,Dine 'n Dash
+1,1,0,0,0,1,OK,Culinary Express
+0,0,0,0,1,0,TX,The Daily Dish
+1,0,1,0,1,0,NV,Fresh & Fast Bites
+1,1,0,0,0,0,HI,Flavors of America
+1,0,1,0,1,0,IL,Urban Eats
+0,0,1,0,1,1,UT,Coastal Catch
+1,1,1,0,0,1,VT,Bistro Bliss
+1,0,1,0,0,0,NM,Taste of Home
+0,0,1,0,1,0,MO,Route 66 Diner
+0,1,0,0,0,1,NJ,Gourmet Wheels
+0,0,1,0,0,1,PA,Foodie Heaven
+0,1,1,1,1,0,AK,Savory Bites Diner
+0,0,0,0,0,1,OH,The Flaming Griddle
+1,0,0,0,0,1,OH,The Flaming Griddle
+0,1,0,0,0,1,MO,Route 66 Diner
+1,1,1,0,1,0,MI,Palate Pleasers
+1,1,0,0,0,1,FL,Sunshine Diner
+1,0,1,0,0,1,OK,Culinary Express
+1,1,0,0,0,1,KS,The Roaming Fork
+0,1,1,0,0,1,UT,Coastal Catch
+0,0,1,0,0,0,WI,The Daily Grind
+1,1,1,1,0,1,NM,Taste of Home
+1,1,1,0,1,1,LA,Coastal Cravings
+0,1,1,0,1,0,MA,The Rustic Spoon
+0,0,1,1,0,0,PA,Foodie Heaven
+0,1,1,1,0,0,NV,Fresh & Fast Bites
+0,1,1,0,0,1,CO,Tasty Junction
+1,0,1,1,1,1,AZ,America's Delight
+1,1,1,0,1,0,SD,The Culinary Crossroads
+1,0,1,1,1,0,FL,Sunshine Diner
+1,1,1,1,1,0,KS,The Roaming Fork
+1,1,0,1,1,1,MN,Hungry Nomad
+1,1,0,0,1,0,RI,The Roost
+0,1,0,0,0,1,SD,The Culinary Crossroads
+1,1,1,1,1,1,CO,Tasty Junction
+1,0,0,0,0,1,DE,Main Street Munchies
+0,0,1,0,0,1,MI,Palate Pleasers
+0,1,0,0,1,0,ID,Blue Plate Special
+0,0,1,0,1,0,MD,Classic Comfort Cafe
+0,0,0,0,0,1,OR,Fork & Knife Delights
+0,1,1,0,1,1,SD,The Culinary Crossroads
+0,0,0,1,1,1,NH,All-American Eats
+0,0,1,1,1,0,RI,The Roost
+0,1,0,0,0,0,NV,Fresh & Fast Bites
+1,0,1,1,1,1,IN,Dine 'n Dash
+1,0,1,1,1,0,MN,Hungry Nomad
+0,1,1,1,0,1,IL,Urban Eats
+0,1,1,0,1,0,MO,Route 66 Diner
+1,0,1,0,1,0,CO,Tasty Junction
+0,0,1,0,0,1,UT,Coastal Catch
+1,0,1,0,1,1,WY,Sunrise Breakfast Club
+0,1,1,1,0,0,NH,All-American Eats
+1,0,0,0,1,0,NM,Taste of Home
+1,1,0,0,0,1,IL,Urban Eats
+1,1,1,0,0,0,MA,The Rustic Spoon
+0,1,1,0,0,1,OR,Fork & Knife Delights
+1,1,1,1,1,1,WI,The Daily Grind
+1,1,1,0,0,1,IL,Urban Eats
+0,0,1,1,0,0,AK,Savory Bites Diner
+0,1,0,0,0,0,GA,Chef's Table
+1,0,1,0,0,0,KY,Liberty Kitchen
+1,1,0,0,0,0,NM,Taste of Home
+1,0,0,0,1,0,MN,Hungry Nomad
+0,0,1,0,0,1,NM,Taste of Home
+0,0,0,0,0,0,ME,Street Food Sensations
+1,1,1,0,0,0,TX,The Daily Dish
+0,1,1,0,0,0,NY,Harvest Moon Cafe
+1,1,1,0,1,1,CO,Tasty Junction
+0,1,0,0,1,1,ID,Blue Plate Special
+1,0,0,0,1,1,ME,Street Food Sensations
+1,0,0,0,0,1,MS,Neighborhood Nosh
+1,1,0,1,0,0,SC,Fusion Flavors
+0,0,1,1,0,1,CT,The Gourmet Galley
+1,0,1,0,0,0,FL,Sunshine Diner
+1,1,1,1,1,1,WY,Sunrise Breakfast Club
+0,0,0,0,1,1,CT,The Gourmet Galley
+0,0,1,1,0,1,AZ,America's Delight
+1,1,0,0,1,0,CO,Tasty Junction
+1,1,0,0,1,0,MA,The Rustic Spoon
+1,0,1,0,0,0,MA,The Rustic Spoon
+1,1,0,1,1,1,MO,Route 66 Diner
+0,1,1,0,0,0,MD,Classic Comfort Cafe
+0,0,1,0,0,1,WI,The Daily Grind
+1,1,1,0,0,1,IN,Dine 'n Dash
+1,1,0,0,0,1,TX,The Daily Dish
+1,1,1,0,1,1,SC,Fusion Flavors
+0,1,1,0,0,1,MN,Hungry Nomad
+1,1,1,0,1,0,WY,Sunrise Breakfast Club
+1,0,1,1,0,0,GA,Chef's Table
+1,1,1,0,0,0,UT,Coastal Catch
+0,0,1,0,1,1,VT,Bistro Bliss
+0,0,0,0,0,0,TN,Homestyle Haven
+0,1,0,0,1,1,CA,Starry Platters
+0,1,0,0,0,1,OH,The Flaming Griddle
+1,0,1,0,1,1,KY,Liberty Kitchen
+1,1,1,0,0,0,AR,The Hungry House
+1,0,0,0,1,1,ND,Farm-to-Table Fare
+0,0,0,0,1,1,WA,Appetite Express
+1,0,1,1,1,1,UT,Coastal Catch
+1,1,1,1,1,1,NC,The Food Truck Fiesta
+0,1,1,0,1,0,DE,Main Street Munchies
+0,0,1,1,0,1,TN,Homestyle Haven
+0,1,1,0,1,1,AL,The Grand Grill
+1,1,1,1,1,1,NC,The Food Truck Fiesta
+0,0,0,1,1,0,NJ,Gourmet Wheels
+1,1,1,0,0,0,LA,Coastal Cravings
+1,0,1,0,0,1,MN,Hungry Nomad
+1,0,1,0,1,0,GA,Chef's Table
+0,0,1,0,0,0,MS,Neighborhood Nosh
+1,0,1,0,1,0,PA,Foodie Heaven
+0,1,1,0,0,1,MT,Spice Route Kitchen
+0,1,1,1,1,0,VA,The Sizzling Skillet
+0,1,1,0,0,0,MS,Neighborhood Nosh
+0,1,1,0,1,0,LA,Coastal Cravings
+0,1,1,1,1,0,MA,The Rustic Spoon
+0,0,1,1,1,1,NJ,Gourmet Wheels
+0,0,1,0,0,1,UT,Coastal Catch
+1,1,0,1,0,1,MO,Route 66 Diner
+0,0,1,0,0,1,OR,Fork & Knife Delights
+0,1,1,1,1,1,FL,Sunshine Diner
+0,1,1,0,1,1,WY,Sunrise Breakfast Club
+1,1,1,1,1,1,NM,Taste of Home
+1,0,1,0,0,0,SD,The Culinary Crossroads
+1,1,1,0,0,1,MN,Hungry Nomad
+0,1,1,0,0,0,DE,Main Street Munchies
+0,1,0,1,0,0,NJ,Gourmet Wheels
+1,0,1,0,1,0,TX,The Daily Dish
+0,1,1,0,0,1,WY,Sunrise Breakfast Club
+0,0,1,0,1,0,TN,Homestyle Haven
+1,1,1,0,0,1,ID,Blue Plate Special
+1,0,0,0,1,1,MO,Route 66 Diner
+1,1,0,0,1,0,DE,Main Street Munchies
+0,0,0,0,1,1,MI,Palate Pleasers
+1,0,1,1,0,1,GA,Chef's Table
+1,1,1,1,1,1,NJ,Gourmet Wheels
+1,1,1,0,1,0,KS,The Roaming Fork
+1,1,1,0,0,0,MN,Hungry Nomad
+1,1,1,0,0,0,OK,Culinary Express
+0,1,1,1,0,0,CT,The Gourmet Galley
+0,0,0,1,1,0,DE,Main Street Munchies
+0,0,1,0,1,0,AZ,America's Delight
+1,0,1,0,1,1,KS,The Roaming Fork
+0,1,1,0,0,0,WI,The Daily Grind
+0,1,0,1,1,1,MD,Classic Comfort Cafe
+1,0,0,0,1,1,IA,Fireside Grill
+1,1,1,0,0,1,HI,Flavors of America
+0,0,0,0,0,0,OH,The Flaming Griddle
+0,0,0,1,1,0,KY,Liberty Kitchen
+0,1,1,0,0,0,PA,Foodie Heaven
+0,1,1,0,0,0,IN,Dine 'n Dash
+1,1,1,1,1,0,IL,Urban Eats
+0,0,1,0,1,1,ME,Street Food Sensations
+1,0,0,1,1,0,MT,Spice Route Kitchen
+0,0,1,0,1,1,MT,Spice Route Kitchen
+1,1,0,0,0,1,GA,Chef's Table
+1,0,1,1,0,0,GA,Chef's Table
+0,1,1,0,0,0,FL,Sunshine Diner
+0,0,1,0,0,1,ID,Blue Plate Special
+1,1,0,0,0,0,NV,Fresh & Fast Bites
+1,1,1,1,0,1,HI,Flavors of America
+0,1,1,0,0,0,ME,Street Food Sensations
+1,1,1,1,1,1,TX,The Daily Dish
+0,1,0,0,0,0,VT,Bistro Bliss
+0,1,1,1,0,0,NY,Harvest Moon Cafe
+1,1,0,0,0,1,CA,Starry Platters
+1,1,1,1,1,1,SD,The Culinary Crossroads
+0,1,0,0,0,0,VA,The Sizzling Skillet
+1,0,0,0,1,1,TX,The Daily Dish
+0,0,0,0,0,1,IL,Urban Eats
+1,0,1,0,1,0,VT,Bistro Bliss
+1,0,1,1,0,0,CO,Tasty Junction
+1,0,1,1,1,0,KY,Liberty Kitchen
+0,1,0,1,1,1,MO,Route 66 Diner
+0,0,0,0,0,1,WV,Chef's Creations
+0,1,1,0,0,1,AZ,America's Delight
+1,1,1,0,1,1,MI,Palate Pleasers
+0,0,1,0,1,1,WI,The Daily Grind
+1,0,1,0,1,0,WY,Sunrise Breakfast Club
+1,1,1,1,1,1,IN,Dine 'n Dash
+1,1,0,1,1,0,NV,Fresh & Fast Bites
+0,0,0,0,1,1,NE,Southern Smokehouse
+1,0,0,0,1,1,KS,The Roaming Fork
+0,1,1,0,0,1,AZ,America's Delight
+1,1,0,0,1,1,CT,The Gourmet Galley
+1,0,0,0,0,1,AK,Savory Bites Diner
+1,1,1,0,1,0,ID,Blue Plate Special
+1,1,0,1,1,1,OH,The Flaming Griddle
+1,0,1,1,0,0,GA,Chef's Table
+0,0,0,0,1,0,NC,The Food Truck Fiesta
+1,1,1,1,1,1,WI,The Daily Grind
+1,0,0,0,1,0,ND,Farm-to-Table Fare
+0,0,1,0,1,0,NH,All-American Eats
+1,1,1,1,1,1,AK,Savory Bites Diner
+0,1,1,0,1,1,ND,Farm-to-Table Fare
+1,0,0,0,1,0,CT,The Gourmet Galley
+1,1,0,0,1,0,DE,Main Street Munchies
+0,1,1,0,0,1,ME,Street Food Sensations
+0,1,1,1,0,0,IL,Urban Eats
+0,0,1,0,0,1,AK,Savory Bites Diner
+1,0,1,0,0,1,KS,The Roaming Fork
+1,1,1,0,0,0,AR,The Hungry House
+1,0,0,1,0,1,WI,The Daily Grind
+0,1,1,1,0,1,VT,Bistro Bliss
+1,1,0,0,1,1,VA,The Sizzling Skillet
+0,1,0,0,1,1,AZ,America's Delight
+0,1,1,0,0,0,VA,The Sizzling Skillet
+0,1,1,0,1,1,WI,The Daily Grind
+0,1,1,0,1,0,OK,Culinary Express
+0,1,1,1,1,1,NM,Taste of Home
+0,1,0,0,0,0,NE,Southern Smokehouse
+0,1,0,0,0,1,NM,Taste of Home
+1,0,0,0,0,0,AR,The Hungry House
+0,0,1,0,1,0,MN,Hungry Nomad
+0,1,1,0,0,1,MI,Palate Pleasers
+0,1,1,0,0,0,VT,Bistro Bliss
+1,0,1,0,1,1,LA,Coastal Cravings
+0,0,1,1,0,0,MT,Spice Route Kitchen
+1,0,0,0,1,0,RI,The Roost
+1,0,1,0,1,1,IN,Dine 'n Dash
+0,0,1,1,0,0,OR,Fork & Knife Delights
+1,0,1,1,1,0,NM,Taste of Home
+1,1,0,0,1,1,MT,Spice Route Kitchen
+1,0,1,1,1,0,MS,Neighborhood Nosh
+0,0,0,1,1,1,WA,Appetite Express
+0,0,0,1,1,1,KY,Liberty Kitchen
+0,1,1,1,0,0,VT,Bistro Bliss
+1,1,0,0,0,1,RI,The Roost
+1,1,1,0,1,0,IL,Urban Eats
+0,1,1,0,1,1,UT,Coastal Catch
+1,1,1,1,0,1,KY,Liberty Kitchen
+1,1,1,0,1,1,AK,Savory Bites Diner
+0,0,0,0,0,1,MS,Neighborhood Nosh
+1,0,1,0,0,1,ME,Street Food Sensations
+1,1,0,0,1,1,ID,Blue Plate Special
+0,0,1,1,1,0,MT,Spice Route Kitchen
+1,0,1,1,0,0,DE,Main Street Munchies
+0,1,1,0,0,1,NJ,Gourmet Wheels
+1,1,1,0,0,1,RI,The Roost
+0,1,1,0,1,0,OK,Culinary Express
+0,1,1,0,0,0,OH,The Flaming Griddle
+0,0,1,0,0,0,ID,Blue Plate Special
+1,1,0,0,0,0,WI,The Daily Grind
+0,0,0,0,1,1,WA,Appetite Express
+0,0,1,0,0,0,WA,Appetite Express
+1,0,0,0,0,0,NH,All-American Eats
+1,1,1,1,0,0,SD,The Culinary Crossroads
+1,1,0,0,0,0,IL,Urban Eats
+1,0,1,0,0,0,MN,Hungry Nomad
+1,1,1,1,0,1,NY,Harvest Moon Cafe
+0,0,0,0,1,1,LA,Coastal Cravings
+1,0,1,0,1,0,HI,Flavors of America
+0,1,1,0,0,0,TX,The Daily Dish
+0,1,0,0,0,0,TX,The Daily Dish
+0,0,0,1,1,1,RI,The Roost
+1,0,1,0,0,1,ND,Farm-to-Table Fare
+1,1,0,1,0,0,OH,The Flaming Griddle
+1,1,1,0,1,1,NE,Southern Smokehouse
+1,0,1,0,1,1,KS,The Roaming Fork
+1,0,0,1,1,0,OK,Culinary Express
+1,1,1,1,1,1,AK,Savory Bites Diner
+0,0,0,0,0,1,GA,Chef's Table
+0,0,1,1,1,1,MN,Hungry Nomad
+0,1,1,0,1,1,WA,Appetite Express
+1,1,0,1,1,0,NY,Harvest Moon Cafe
+0,1,0,0,1,1,GA,Chef's Table
+0,0,0,1,0,0,ME,Street Food Sensations
+1,0,1,0,0,1,SC,Fusion Flavors
+0,0,1,0,0,0,ID,Blue Plate Special
+0,1,1,0,1,1,NE,Southern Smokehouse
+1,0,0,0,1,1,TX,The Daily Dish
+1,1,1,0,1,1,RI,The Roost
+0,0,1,0,1,0,IA,Fireside Grill
+1,0,1,0,1,0,OH,The Flaming Griddle
+1,0,1,1,0,1,SD,The Culinary Crossroads
+1,0,1,0,0,1,NV,Fresh & Fast Bites
+1,0,0,0,1,1,DE,Main Street Munchies
+0,0,1,0,0,1,ME,Street Food Sensations
+1,0,1,0,0,1,TX,The Daily Dish
+1,1,1,1,1,1,NV,Fresh & Fast Bites
+1,1,1,1,1,1,NY,Harvest Moon Cafe
+1,1,1,0,1,0,ND,Farm-to-Table Fare
+0,0,1,0,1,0,HI,Flavors of America
+0,0,1,1,1,0,DE,Main Street Munchies
+0,0,0,0,0,0,MS,Neighborhood Nosh
+1,0,1,0,1,1,OR,Fork & Knife Delights
+1,1,0,0,1,1,NE,Southern Smokehouse
+0,0,0,0,0,0,SC,Fusion Flavors
+1,0,1,0,0,1,FL,Sunshine Diner
+1,1,1,1,0,0,VT,Bistro Bliss
+1,0,0,0,0,1,AL,The Grand Grill
+0,0,1,0,1,1,IA,Fireside Grill
+1,0,1,0,0,0,CO,Tasty Junction
+1,1,1,1,1,1,ID,Blue Plate Special
+0,1,1,0,0,0,WY,Sunrise Breakfast Club
+1,1,1,0,0,1,TN,Homestyle Haven
+1,0,0,1,1,1,NY,Harvest Moon Cafe
+0,1,1,0,0,1,NM,Taste of Home
+1,0,0,0,0,0,WV,Chef's Creations
+1,1,0,0,1,0,NJ,Gourmet Wheels
+1,0,1,0,0,1,WA,Appetite Express
+1,1,1,1,1,1,ME,Street Food Sensations
+1,0,1,1,1,1,CA,Starry Platters
+0,1,0,0,0,0,SC,Fusion Flavors
+1,0,1,0,1,1,CA,Starry Platters
+1,1,1,0,1,0,IA,Fireside Grill
+1,0,0,1,0,1,WY,Sunrise Breakfast Club
+1,0,0,0,1,1,FL,Sunshine Diner
+1,1,1,0,1,0,WA,Appetite Express
+1,0,1,0,0,0,NH,All-American Eats
+1,0,1,0,1,1,WV,Chef's Creations
+0,0,1,0,0,0,NE,Southern Smokehouse
+1,0,1,0,0,1,NY,Harvest Moon Cafe
+0,0,0,0,1,1,UT,Coastal Catch
+1,1,0,0,0,1,MT,Spice Route Kitchen
+1,1,1,1,1,1,IA,Fireside Grill
+1,1,1,1,1,1,TX,The Daily Dish
+0,0,1,0,0,1,MA,The Rustic Spoon
+0,1,1,0,0,0,LA,Coastal Cravings
+1,1,1,0,0,1,RI,The Roost
+1,0,1,0,0,0,FL,Sunshine Diner
+0,0,1,0,0,0,WV,Chef's Creations
+1,1,1,1,1,1,KY,Liberty Kitchen
+1,1,0,0,1,0,HI,Flavors of America
+0,0,1,0,1,1,NC,The Food Truck Fiesta
+1,0,1,0,0,1,MD,Classic Comfort Cafe
+1,1,1,0,0,0,IN,Dine 'n Dash
+1,1,0,1,1,0,VT,Bistro Bliss
+1,0,1,0,1,1,CA,Starry Platters
+0,1,1,0,1,1,TN,Homestyle Haven
+1,0,1,0,1,1,OR,Fork & Knife Delights
+0,1,0,1,1,0,WA,Appetite Express
+0,1,1,1,0,0,UT,Coastal Catch
+0,0,1,1,1,0,MS,Neighborhood Nosh
+1,1,1,0,1,0,KY,Liberty Kitchen
+1,0,1,0,1,1,OR,Fork & Knife Delights
+1,0,0,0,0,1,GA,Chef's Table
+0,1,0,0,0,1,ND,Farm-to-Table Fare
+1,1,0,0,0,1,WV,Chef's Creations
+1,0,1,0,0,0,FL,Sunshine Diner
+1,1,0,1,0,1,MD,Classic Comfort Cafe
+1,0,0,0,0,1,MI,Palate Pleasers
+0,0,1,0,0,1,KS,The Roaming Fork
+1,0,0,0,1,0,DE,Main Street Munchies
+1,1,1,1,0,1,SC,Fusion Flavors
+0,1,1,0,0,0,UT,Coastal Catch
+1,0,0,1,0,0,AK,Savory Bites Diner
+1,0,1,1,1,0,OH,The Flaming Griddle
+1,1,1,1,1,1,OR,Fork & Knife Delights
+1,0,0,1,1,0,KS,The Roaming Fork
+1,0,0,0,0,0,NE,Southern Smokehouse
+0,0,0,0,0,0,TN,Homestyle Haven
+1,0,1,1,1,1,MA,The Rustic Spoon
+1,1,1,1,0,1,AK,Savory Bites Diner
+0,1,1,0,0,1,HI,Flavors of America
+0,0,0,0,1,0,AR,The Hungry House
+0,0,1,0,1,1,AL,The Grand Grill
+0,1,0,1,0,1,MT,Spice Route Kitchen
+0,0,1,1,1,0,KY,Liberty Kitchen
+1,0,0,1,1,0,OH,The Flaming Griddle
+0,1,0,0,0,1,ME,Street Food Sensations
+0,0,1,0,0,1,VA,The Sizzling Skillet
+1,0,1,0,0,0,AK,Savory Bites Diner
+1,1,1,1,1,1,NC,The Food Truck Fiesta
+0,1,1,1,1,1,AZ,America's Delight
+0,0,1,1,1,1,NV,Fresh & Fast Bites
+1,0,1,0,1,1,VT,Bistro Bliss
+1,0,0,0,1,1,NH,All-American Eats
+0,1,1,0,1,1,WV,Chef's Creations
+1,1,0,0,1,1,NY,Harvest Moon Cafe
+0,0,0,1,1,1,MT,Spice Route Kitchen
+1,0,1,1,0,1,MI,Palate Pleasers
+1,1,1,0,0,0,AR,The Hungry House
+0,1,0,0,0,0,NM,Taste of Home
+0,1,1,0,0,0,MT,Spice Route Kitchen
+1,0,1,0,1,0,OK,Culinary Express
+0,0,0,0,0,0,MS,Neighborhood Nosh
+0,1,1,0,1,1,OH,The Flaming Griddle
+1,1,1,0,0,0,OR,Fork & Knife Delights
+0,0,1,0,1,1,SD,The Culinary Crossroads
+1,0,1,1,0,0,IA,Fireside Grill
+0,1,1,0,0,1,ID,Blue Plate Special
+1,0,1,1,1,0,LA,Coastal Cravings
+0,0,1,0,1,1,NH,All-American Eats
+1,0,1,0,1,0,LA,Coastal Cravings
+1,0,1,1,0,1,NJ,Gourmet Wheels
+1,1,0,0,1,0,WA,Appetite Express
+0,0,1,0,1,1,LA,Coastal Cravings
+0,1,1,0,0,0,AL,The Grand Grill
+1,1,1,0,1,1,MI,Palate Pleasers
+1,1,1,1,1,1,DE,Main Street Munchies
+0,1,1,0,0,1,CA,Starry Platters
+1,1,1,1,1,0,WI,The Daily Grind
+0,1,1,1,1,1,NE,Southern Smokehouse
+0,0,1,1,1,1,NV,Fresh & Fast Bites
+1,1,0,1,1,0,TN,Homestyle Haven
+1,0,0,1,1,0,ID,Blue Plate Special
+1,0,1,1,1,0,NC,The Food Truck Fiesta
+1,0,1,0,1,0,NY,Harvest Moon Cafe
+1,0,1,1,0,1,MN,Hungry Nomad
+0,1,1,0,1,1,PA,Foodie Heaven
+0,0,0,0,0,0,NV,Fresh & Fast Bites
+0,1,1,0,0,0,IA,Fireside Grill
+1,1,1,1,0,1,NE,Southern Smokehouse
+0,0,1,0,1,0,MD,Classic Comfort Cafe
+0,0,1,0,0,0,IA,Fireside Grill
+0,1,1,0,0,1,KS,The Roaming Fork
+0,0,1,0,0,0,GA,Chef's Table
+0,0,0,0,1,1,KS,The Roaming Fork
+1,1,1,1,1,1,MI,Palate Pleasers
+1,0,0,0,0,1,NH,All-American Eats
+1,1,1,0,0,0,TN,Homestyle Haven
+1,1,1,0,1,0,NC,The Food Truck Fiesta
+1,0,0,0,0,1,DE,Main Street Munchies
+0,1,1,0,0,1,FL,Sunshine Diner
+1,1,1,1,1,1,WV,Chef's Creations
+0,0,1,1,0,1,OK,Culinary Express
+1,1,1,1,1,1,SC,Fusion Flavors
+1,1,1,0,1,0,TX,The Daily Dish
+1,1,1,1,1,1,CA,Starry Platters
+1,1,0,1,0,1,IN,Dine 'n Dash
+0,1,1,0,1,0,AZ,America's Delight
