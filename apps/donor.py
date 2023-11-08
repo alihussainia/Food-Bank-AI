@@ -1,17 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
-from pycaret.regression import load_model, predict_model
+from dataset.sweden_job_banks import sweden_food_banks_dict 
 
-#with st.echo(code_location='below'):
-def predict_rating(model, df):
-    
-    predictions_data = predict_model(estimator = model, data = df)
-    
-    return predictions_data['Label'][0]
-
-model = load_model('/mount/src/food-bank-ai/models/food_banks_model')
+model = tf.keras.models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
 def app():
     st.header('Welcome to the Donors Section')
@@ -27,16 +19,13 @@ def app():
     all_options = st.checkbox("Select all options")
  
     if all_options:
-        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies', 'State']
+        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies']
     
-    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0,'State': ""}
+    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0}
     for i in selected_options:
         v=i
-        i = st.sidebar.number_input(label = str(i), value = 0, step=1)
+        i = st.sidebar.selectbox(label = str(i), (1,2,3,4,5,6,7,8,9,10))
         features[v]=i
-
-    text_inp = st.text_input("Enter State Code")
-    features['State']=text_inp
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Acceptance'])
 
@@ -55,7 +44,10 @@ def app():
 
     if st.button('Find NGO'):
 
-        prediction = predict_rating(model, features_df)
+        input_dict = np.array([list(features_df.values())])*1.0
+        predictions = model.predict(input_dict,verbose = 0)
+        cls=np.argmax(predictions[0])
+        prediction=job_bank_dict[cls]
         
-        st.write('Based on your donation level and food options, the most suitable NGO is '+ str(prediction))
+        st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)
 
