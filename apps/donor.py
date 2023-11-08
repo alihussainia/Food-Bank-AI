@@ -44,8 +44,8 @@ def app():
 
 
     if st.button('Find NGO'):
-
-        input_dict = np.array([list(features_df.values())])*1.0
+        features_lst = list(features_df.values())
+        input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict,verbose = 0)
         cls=np.argmax(predictions[0])
         prediction=job_bank_dict[cls]
