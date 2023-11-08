@@ -1,3 +1,6 @@
-pycaret
-streamlit
+numpy
 pandas
+pycaret
+joblib
+streamlit
+
