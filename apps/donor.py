@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from tensorflow import keras
 from tensorflow.keras import models
-from datasets.sweden_job_banks import sweden_food_banks_dict 
+from datasets.sweden_food_banks import sweden_food_banks_dict 
 
 model = tensorflow.keras.models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
