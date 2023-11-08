@@ -1,15 +1,10 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
-from pycaret.regression import load_model, predict_model
+from tensorflow.keras import models
+from datasets.sweden_food_banks import sweden_food_banks_dict 
 
-#with st.echo(code_location='below'):
-def predict_rating(model, df):
-    
-    predictions_data = predict_model(estimator = model, data = df)
-    
-    return predictions_data['Label'][0]
-    
-model = load_model('/mount/src/food-bank-ai/models/donors_model')
+model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
 def app():
     st.header('Welcome to the NGO Section')
@@ -30,7 +25,7 @@ def app():
     features={}
     for i in selected_options:
         v=i
-        i = st.sidebar.number_input(label = str(i), value = 0, step=1)
+        i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10)
         features[v]=i
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Acceptance'])
@@ -50,10 +45,13 @@ def app():
     if st.button('Find Donor'):
         
         
-        prediction = predict_rating(model, features_df)
+        input_dict = np.array([list(features_df.values())])*1.0
+        predictions = model.predict(input_dict,verbose = 0)
+        cls=np.argmax(predictions[0])
+        prediction=job_bank_dict[cls]
         
         
-        st.write('Based on your acceptance level and food options, the most suitable donor is '+ str(prediction))
+        st.write('Based on your acceptance level and food options, the most suitable donor is '+ prediction)
  
  
  
