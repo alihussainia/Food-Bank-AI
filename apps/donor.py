@@ -3,8 +3,16 @@ import numpy as np
 import pandas as pd
 import joblib
 
-# Load trained Pipeline
-model = joblib.load("models/food_bank_model.pkl")
+from pycaret.regression import load_model, predict_model
+
+#with st.echo(code_location='below'):
+def predict_rating(model, df):
+    
+    predictions_data = predict_model(estimator = model, data = df)
+    
+    return predictions_data['Label'][0]
+    
+model = load_model('models/food_bank_model.pkl')
 
 
 def app():
@@ -45,8 +53,8 @@ def app():
 
 
     if st.button('Find NGO'):
-        predictions = model.predict(features_df[:])
-        #prediction = predict_rating(model, features_df)
-        predictions = predictions[0].item()
+        #predictions = model.predict(features_df[:])
+        prediction = predict_rating(model, features_df)
+        #predictions = predictions[0].item()
         st.write('Based on your donation level and food options, the most suitable NGO is '+ str(prediction))
 
