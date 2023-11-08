@@ -28,7 +28,7 @@ def app():
         i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10)
         features[v]=i
 
-    features_df  = pd.DataFrame(features, index=['Bags Selected for Acceptance'])
+    features_df  = pd.DataFrame(features, index=['Bags Selected for Donation'])
 
     if features:
         st.table(features_df)
