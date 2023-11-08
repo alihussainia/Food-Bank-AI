@@ -49,7 +49,7 @@ def app():
         cls=np.argmax(predictions[0])
         prediction=sweden_food_banks_dict[cls]
         
-        st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)
+        st.write('Based on your acceptance level and food options, the most suitable Donor is '+ prediction)
  
  
  
