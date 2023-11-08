@@ -47,6 +47,7 @@ def app():
         
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
+        st.write(input_dict)
         predictions = model.predict(input_dict,verbose = 0)
         cls=np.argmax(predictions[0])
         prediction=sweden_food_banks_dict[cls]
