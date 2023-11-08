@@ -23,13 +23,13 @@ def app():
     
     selected_options = st.multiselect("Select one or more options:",
     ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Fruites', 'Veggies'])
- 
+    text_inp = st.textbox("Enter State Code")
     all_options = st.checkbox("Select all options")
  
     if all_options:
-        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies']
+        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies', 'State']
     
-    features={}
+    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0,'State': text_inp}
     for i in selected_options:
         v=i
         i = st.sidebar.number_input(label = str(i), value = 0, step=1)
