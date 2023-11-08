@@ -21,9 +21,9 @@ def app():
     all_options = st.checkbox("Select all options")
  
     if all_options:
-        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies']
+        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Fruites', 'Veggies']
     
-    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0}
+    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Fruites':0,'Veggies':0}
     for option in selected_options:
         i = st.sidebar.number_input(label = str(option), value = 0, step=1, max_value=10,min_value=0)
         features[option]=i
