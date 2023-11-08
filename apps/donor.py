@@ -35,7 +35,7 @@ def app():
         i = st.sidebar.number_input(label = str(i), value = 0, step=1)
         features[v]=i
 
-    text_inp = st.textbox("Enter State Code")
+    text_inp = st.text_input("Enter State Code")
     features['State']=text_inp
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Acceptance'])
