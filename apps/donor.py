@@ -4,7 +4,7 @@ import pandas as pd
 from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 
-model = models.keras.models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
+model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
 def app():
     st.header('Welcome to the Donors Section')
