@@ -20,9 +20,9 @@ def app():
     all_options = st.checkbox("Select all options")
  
     if all_options:
-        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies']
+        selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Fruites', 'Veggies']
     
-    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0}
+    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Fruites':0,'Veggies':0}
     for i in selected_options:
         v=i
         i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10,min_value=0)
@@ -45,7 +45,6 @@ def app():
     if st.button('Find NGO'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
-        input_dict.reshape(6,1)
         predictions = model.predict(input_dict,verbose = 0)
         cls=np.argmax(predictions[0])
         prediction=sweden_food_banks_dict[cls]
