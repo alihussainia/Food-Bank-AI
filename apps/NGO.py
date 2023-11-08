@@ -22,13 +22,13 @@ def app():
     if all_options:
         selected_options = ['SeaFood', 'Poultry', 'Bakery', 'Dairy','Frutis', 'Veggies']
     
-    features={}
+    features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Frutis':0,'Veggies':0}
     for i in selected_options:
         v=i
-        i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10, min_value=0)
+        i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10,min_value=0)
         features[v]=i
 
-    features_df  = pd.DataFrame(features, index=['Bags Selected for Acceptance'])
+    features_df  = pd.DataFrame(features, index=['Bags Selected for Donation'])
 
     if features:
         st.table(features_df)
@@ -42,18 +42,14 @@ def app():
     </style>""", unsafe_allow_html=True)
  
  
-    if st.button('Find Donor'):
-        
-        
+    if st.button('Find NGO'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
-        st.write(input_dict)
         predictions = model.predict(input_dict,verbose = 0)
         cls=np.argmax(predictions[0])
         prediction=sweden_food_banks_dict[cls]
         
-        
-        st.write('Based on your acceptance level and food options, the most suitable donor is '+ prediction)
+        st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)
  
  
  
