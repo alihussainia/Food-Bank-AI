@@ -41,8 +41,7 @@ class MultiApp:
     def run(self):
         # app = st.sidebar.radio(
         app = st.selectbox(
-            'Are you a Donor or NGO?',
-            placeholder="Click ME!",
+            'Are you a Donor or NGO? SELECT BELOW!',
             self.apps,
             format_func=lambda app: app['title'])
 
