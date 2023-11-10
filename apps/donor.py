@@ -71,7 +71,7 @@ def app():
             save_to_trubrics=True,
             align="center")
 
-            st.write("What do you feel about the App idea?")
+            st.write("How do you feel about the App idea?")
             user_feedback2 = collector.st_feedback(
             component="IdeaResponse",
             feedback_type="faces",
@@ -80,7 +80,7 @@ def app():
             save_to_trubrics=True,
             align="center")
 
-            st.write("[Optional] Feel free to provide any additional feedback about the App")
+            st.write("[Optional] Provide any additional feedback about the App")
             user_feedback3 = collector.st_feedback(
             component="FeedbackResponse",
             feedback_type="textbox",
