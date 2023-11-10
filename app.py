@@ -4,10 +4,10 @@ from apps import home, donor, NGO # import your app modules here
 
 app = MultiApp()
 
-st.markdown("""
-# Food Bank
+st.markdown("""# Food Bank""")
+st.header('', divider='rainbow')
 
-Food Bank is a Counter Hunger initiative with an aim to remove food wastage and proverty driven hunger issues by connecting food donors with food banks.
+st.markdown("""Food Bank is a Counter Hunger initiative with an aim to remove food wastage and proverty driven hunger issues by connecting food donors with food banks.
 
 """)
 
