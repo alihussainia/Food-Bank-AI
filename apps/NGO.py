@@ -3,11 +3,18 @@ import numpy as np
 import pandas as pd
 from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
+from trubrics.integrations.streamlit import FeedbackCollector
+import os
 
 model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
+collector = FeedbackCollector(
+    email=os.environ["TRUBRICS_EMAIL"],
+    password=os.environ["TRUBRICS_PASSWORD"],
+    project="Food-Bank-AI")
+
 def app():
-    st.header('Welcome to the NGO Section')
+    st.header('Welcome to the NGO Section', divider='rainbow')
  
     st.markdown("👈 **Please select the Food Quantities (bags) that you wish to accept:**")
     st.write("Note: Leave the options to 0 that you don't want to accept now")
@@ -51,7 +58,44 @@ def app():
         
         st.write('Based on your acceptance level and food options, the most suitable Donor is '+ prediction)
  
- 
+        st.header('Feedback Form', divider='rainbow')
+
+        st.write('Please provide your feedback below :point_down:')
+
+        with st.form(key='my_form'):
+            st.write("Do you support Dark Theme for this App?")
+            user_feedback1 = collector.st_feedback(
+            component="DarkUIResponse",
+            feedback_type="thumbs",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            align="center")
+
+            st.write("How do you feel about the App idea?")
+            user_feedback2 = collector.st_feedback(
+            component="IdeaResponse",
+            feedback_type="faces",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            align="center")
+
+            st.write("[Optional] Provide any additional feedback about the App")
+            user_feedback3 = collector.st_feedback(
+            component="FeedbackResponse",
+            feedback_type="textbox",
+            textbox_type="text-input",
+            open_feedback_label="",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            align="center") 
+
+            submitted1 = st.form_submit_button('Submit Feedback')
+            
+        if submitted1:
+            st.toast("Thank You for Using Food Bank!")
  
  
  
