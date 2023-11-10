@@ -4,7 +4,7 @@ import pandas as pd
 from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 from trubrics.integrations.streamlit import FeedbackCollector
-#import os
+import os
 import subprocess
 if not os.path.isfile('/mount/src/food-bank-ai/models/food_banks_classifier.keras'):
     subprocess.run(['curl --output models/food_banks_classifier.keras "https://github.com/alihussainia/Food-Bank-AI/raw/main/models/food_banks_classifier.keras"'], shell=True)
