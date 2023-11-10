@@ -4,8 +4,22 @@ import pandas as pd
 from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 from annotated_text import annotated_text
+from trubrics.integrations.streamlit import FeedbackCollector
 
 model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
+
+
+email=st.secrets.TRUBRICS_EMAIL,
+password=st.secrets.TRUBRICS_PASSWORD,
+
+@st.cache_data
+def init_trubrics(email, password):
+    collector = FeedbackCollector(
+        email=email,
+        password=password,
+        project="foodbank")
+    
+collector = init_trubrics(email, password)
 
 def app():
     st.header('Welcome to the Donors Section')
@@ -32,7 +46,6 @@ def app():
 
     if features:
         st.table(features_df)
-
     
     m = st.markdown("""
     <style>
@@ -51,4 +64,36 @@ def app():
         prediction=sweden_food_banks_dict[cls]
         
         st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)
+
+        st.write('Please provide your feedback below :point_down:')
+
+        st.write("Do you support Dark Theme for this App?")
+        user_feedback1 = collector.st_feedback(
+        component="DarkUIResponse",
+        feedback_type="thumbs",
+        model=model,
+        metadata={"input_features":features, "predicted_class": prediction},
+        save_to_trubrics=True,
+        align="flex-end") 
+
+        st.write("What do you feel about the App idea?")
+        user_feedback2 = collector.st_feedback(
+        component="IdeaResponse",
+        feedback_type="faces",
+        model=model,
+        metadata={"input_features":features, "predicted_class": prediction},
+        save_to_trubrics=True,
+        align="flex-end")
+
+        st.write("[Optional] Feel free to provide any additional feedback about the App")
+        user_feedback3 = collector.st_feedback(
+        component="FeedbackResponse",
+        feedback_type="textbox",
+        textbox_type="text-input",
+        model=model,
+        metadata={"input_features":features, "predicted_class": prediction},
+        save_to_trubrics=True,
+        align="flex-end") 
+
+        
 
