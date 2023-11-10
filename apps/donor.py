@@ -9,8 +9,8 @@ from trubrics.integrations.streamlit import FeedbackCollector
 model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
 collector = FeedbackCollector(
-    email=st.secrets.["TRUBRICS_EMAIL"],
-    password=st.secrets.["TRUBRICS_PASSWORD"],
+    email=st.secrets.TRUBRICS_EMAIL,
+    password=st.secrets.TRUBRICS_PASSWORD,
     project="Food-Bank-AI")
     
 def app(): 
