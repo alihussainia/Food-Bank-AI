@@ -4,13 +4,13 @@ import pandas as pd
 from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 from trubrics.integrations.streamlit import FeedbackCollector
-import os
+#import os
 
 model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
 
 collector = FeedbackCollector(
-    email=os.environ["TRUBRICS_EMAIL"],
-    password=os.environ["TRUBRICS_PASSWORD"],
+    email=st.secrets.["TRUBRICS_EMAIL"],
+    password=st.secrets.["TRUBRICS_PASSWORD"],
     project="Food-Bank-AI")
     
 def app(): 
