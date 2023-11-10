@@ -2,4 +2,4 @@ numpy
 pandas
 tensorflow
 streamlit
-"trubrics[streamlit]"
+trubrics[streamlit]
