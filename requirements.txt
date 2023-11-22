@@ -1,5 +1,6 @@
 numpy
 pandas
-tensorflow
+joblib
+scikit-learn==1.2.2
 streamlit
-st-annotated-text
+trubrics[streamlit]
