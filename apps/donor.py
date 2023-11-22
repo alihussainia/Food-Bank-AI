@@ -63,9 +63,8 @@ def app():
         st.header('Feedback Form', divider='rainbow')
 
         st.write('Please provide your feedback below :point_down:')
-        
-        with st.form(key='my_form'):
-            if st.session_state.feedback_key==0:
+        if st.session_state.feedback_key==0:
+            with st.form(key='my_form'):
                 st.write("Do you support Dark Theme for this App?")
                 user_feedback1 = collector.st_feedback(
                 component="DarkUIResponse",
