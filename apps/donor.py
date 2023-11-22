@@ -1,20 +1,11 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from tensorflow.keras import models
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 from trubrics.integrations.streamlit import FeedbackCollector
-import os
-import subprocess
+from joblib import load
 
-#if not os.path.isfile('models/food_banks_classifier.keras'):
-#subprocess.run(['curl --output models/food_banks_classifier.keras "https://github.com/alihussainia/Food-Bank-AI/raw/main/models/food_banks_classifier.keras"'], shell=True)
-
-#model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras', compile=False)
-
-model = models.load_model('models/food_banks_classifier.keras', compile=False)
-
-#model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
+model = load('models/food_banks.joblib')
 
 collector = FeedbackCollector(
     email=st.secrets.TRUBRICS_EMAIL,
@@ -39,7 +30,7 @@ def app():
     
     features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Fruites':0,'Veggies':0}
     for option in selected_options:
-        i = st.sidebar.number_input(label = str(option), value = 0, step=1, max_value=10,min_value=0)
+        i = st.sidebar.number_input(label = str(option), value = 0, step=1, max_value=8,min_value=0)
         features[option]=i
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Donation'])
@@ -59,8 +50,8 @@ def app():
     if st.button('Find NGO'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
-        predictions = model.predict(input_dict,verbose = 0)
-        cls=np.argmax(predictions[0])
+        predictions = model.predict(input_dict)
+        cls=np.argmax(predictions)
         prediction=sweden_food_banks_dict[cls]
         
         st.write('Based on your donation level and food options, the most suitable NGO is '+ prediction)

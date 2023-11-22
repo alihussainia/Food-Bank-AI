@@ -1,12 +1,12 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from tensorflow.keras import models
+import os
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 from trubrics.integrations.streamlit import FeedbackCollector
-import os
+from joblib import load
 
-model = models.load_model('/mount/src/food-bank-ai/models/food_banks_classifier.keras')
+model = load('models/food_banks.joblib')
 
 collector = FeedbackCollector(
     email=os.environ["TRUBRICS_EMAIL"],
@@ -32,7 +32,7 @@ def app():
     features={'SeaFood':0,'Poultry':0,'Bakery':0,'Dairy':0,'Fruites':0,'Veggies':0}
     for i in selected_options:
         v=i
-        i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=10,min_value=0)
+        i = st.sidebar.number_input(label = str(i), value = 0, step=1, max_value=8,min_value=0)
         features[v]=i
 
     features_df  = pd.DataFrame(features, index=['Bags Selected for Donation'])
@@ -52,8 +52,8 @@ def app():
     if st.button('Find NGO'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
-        predictions = model.predict(input_dict,verbose = 0)
-        cls=np.argmax(predictions[0])
+        predictions = model.predict(input_dict)
+        cls=np.argmax(predictions)
         prediction=sweden_food_banks_dict[cls]
         
         st.write('Based on your acceptance level and food options, the most suitable Donor is '+ prediction)
