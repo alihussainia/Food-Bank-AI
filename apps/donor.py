@@ -98,11 +98,12 @@ def app():
             open_feedback_label="",
             model=model,
             metadata={"input_features":features, "predicted_class": prediction},
+            key=st.session_state.key_3,
             save_to_trubrics=True,
             align="center") 
-
+            st.write(st.session_state.key_3)
             submitted1 = st.form_submit_button('Submit Feedback')
-            
+        st.write(st.session_state.key_3)    
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
             # st.session_state.feedback_key += 1
