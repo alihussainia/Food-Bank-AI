@@ -9,8 +9,11 @@ model = load('models/food_banks.joblib')
 
 if "feedback_key" not in st.session_state:
     st.session_state["feedback_key"] = 0
+if "key_1" not in st.session_state:
     st.session_state["key_1"] = 0
+if "key_2" not in st.session_state:
     st.session_state["key_2"] = 0
+if "key_3" not in st.session_state:
     st.session_state["key_3"] = 0
 
 submitted1 = None
