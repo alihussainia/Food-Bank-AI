@@ -51,7 +51,7 @@ def app():
 
 
     if st.button('Find NGO'):
-        st.session_state.logged_prompt = collector.log_prompt(config_model={"model": model})
+        st.session_state.logged_prompt = collector.log_prompt(config_model={"model": model}, prompt="", generation="")
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict)
