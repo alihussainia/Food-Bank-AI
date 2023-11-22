@@ -66,7 +66,6 @@ def app():
                 component="DarkUIResponse",
                 feedback_type="thumbs",
                 model=model,
-                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center")
@@ -76,7 +75,6 @@ def app():
                 component="IdeaResponse",
                 feedback_type="faces",
                 model=model,
-                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center")
@@ -88,7 +86,6 @@ def app():
                 textbox_type="text-input",
                 open_feedback_label="",
                 model=model,
-                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center") 
