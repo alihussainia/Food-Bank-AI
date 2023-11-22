@@ -7,6 +7,9 @@ from joblib import load
     
 model = load('models/food_banks.joblib')
 
+if 'my_form' not in st.session_state:
+    st.session_state.my_button = True
+        
 collector = FeedbackCollector(
     email=st.secrets.TRUBRICS_EMAIL,
     password=st.secrets.TRUBRICS_PASSWORD,
@@ -90,8 +93,9 @@ def app():
             save_to_trubrics=True,
             align="center") 
 
-            submitted1 = st.form_submit_button('Submit Feedback')
+            submitted1 = st.form_submit_button('Submit Feedback', key="my_form")
             
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
+            del st.session_state["my_form"]
 
