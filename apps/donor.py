@@ -56,9 +56,7 @@ def app():
     }
     </style>""", unsafe_allow_html=True)
 
-    def stable():
-        st.session_state["feedback_key"] = 0
-
+   
     if st.button('Find NGO'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
@@ -105,13 +103,13 @@ def app():
             save_to_trubrics=True,
             align="center") 
             
-            submitted1 = st.form_submit_button('Submit Feedback', on_click=stable)
+            submitted1 = st.form_submit_button('Submit Feedback')
         
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
-            # st.session_state.feedback_key += 1
-            # st.session_state.key_1 += 1
-            # st.session_state.key_2 += 2
-            # st.session_state.key_3 += 3
-            # st.experimental_rerun()
+            st.session_state.feedback_key = 0
+            st.session_state.key_1 = 1
+            st.session_state.key_2 = 2
+            st.session_state.key_3 = 3
+            #st.experimental_rerun()
 
