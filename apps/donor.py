@@ -9,6 +9,9 @@ model = load('models/food_banks.joblib')
 
 if "feedback_key" not in st.session_state:
     st.session_state["feedback_key"] = 0
+    st.session_state["key_1"] = 0
+    st.session_state["key_2"] = 0
+    st.session_state["key_3"] = 0
 
 submitted1 = None
 collector = FeedbackCollector(
@@ -72,7 +75,7 @@ def app():
             model=model,
             metadata={"input_features":features, "predicted_class": prediction},
             save_to_trubrics=True,
-            key=st.session_state.feedback_key,
+            key=st.session_state.key_1,
             align="center")
 
             st.write("How do you feel about the App idea?")
@@ -82,7 +85,7 @@ def app():
             model=model,
             metadata={"input_features":features, "predicted_class": prediction},
             save_to_trubrics=True,
-            key=st.session_state.feedback_key,
+            key=st.session_state.key_2,
             align="center")
 
             st.write("[Optional] Provide any additional feedback about the App")
@@ -94,7 +97,7 @@ def app():
             model=model,
             metadata={"input_features":features, "predicted_class": prediction},
             save_to_trubrics=True,
-            key=st.session_state.feedback_key,
+            key=st.session_state.key_3,
             align="center") 
 
             submitted1 = st.form_submit_button('Submit Feedback')
@@ -102,5 +105,8 @@ def app():
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
             # st.session_state.feedback_key += 1
+            # st.session_state.key_1 += 1
+            # st.session_state.key_2 += 2
+            # st.session_state.key_3 += 3
             # st.experimental_rerun()
 
