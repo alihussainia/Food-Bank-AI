@@ -71,7 +71,7 @@ def app():
         st.write('Please provide your feedback below :point_down:')
         # if st.session_state.feedback_key==0:
         with st.form(key='feedback_key'):
-            st.write("Do you support Dark Theme for this App?")
+            st.write("Do you support Dark Theme for this App?", key=st.session_state.key_1)
             user_feedback1 = collector.st_feedback(
             component="DarkUIResponse",
             feedback_type="thumbs",
@@ -81,7 +81,7 @@ def app():
             key=st.session_state.feedback_key,
             align="center")
 
-            st.write("How do you feel about the App idea?")
+            st.write("How do you feel about the App idea?", key=st.session_state.key_2)
             user_feedback2 = collector.st_feedback(
             component="IdeaResponse",
             feedback_type="faces",
@@ -90,7 +90,7 @@ def app():
             save_to_trubrics=True,
             align="center")
 
-            st.write("[Optional] Provide any additional feedback about the App")
+            st.write("[Optional] Provide any additional feedback about the App", key=st.session_state.key_3)
             user_feedback3 = collector.st_feedback(
             component="FeedbackResponse",
             feedback_type="textbox",
