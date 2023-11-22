@@ -4,9 +4,6 @@ import pandas as pd
 from datasets.sweden_food_banks import sweden_food_banks_dict 
 from trubrics.integrations.streamlit import FeedbackCollector
 from joblib import load
-
-if "logged_prompt" not in st.session_state:
-    st.session_state.logged_prompt = None
     
 model = load('models/food_banks.joblib')
 
@@ -51,7 +48,6 @@ def app():
 
 
     if st.button('Find NGO'):
-        st.session_state.logged_prompt = collector.log_prompt(config_model={"model": model}, prompt="", generation="")
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict)
@@ -66,11 +62,11 @@ def app():
 
         with st.form(key='my_form'):
             st.write("Do you support Dark Theme for this App?")
-            if st.session_state.logged_prompt:
                 user_feedback1 = collector.st_feedback(
                 component="DarkUIResponse",
                 feedback_type="thumbs",
                 model=model,
+                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center")
@@ -80,6 +76,7 @@ def app():
                 component="IdeaResponse",
                 feedback_type="faces",
                 model=model,
+                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center")
@@ -91,6 +88,7 @@ def app():
                 textbox_type="text-input",
                 open_feedback_label="",
                 model=model,
+                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center") 
