@@ -8,7 +8,7 @@ from joblib import load
 model = load('models/food_banks.joblib')
 
 if "feedback_key" not in st.session_state:
-    st.session_state.feedback_key = 0
+    st.session_state["feedback_key"] = 0
 
 submitted1 = None
 collector = FeedbackCollector(
@@ -63,41 +63,41 @@ def app():
         st.header('Feedback Form', divider='rainbow')
 
         st.write('Please provide your feedback below :point_down:')
-        if st.session_state.feedback_key==0:
-            with st.form(key='my_form'):
-                st.write("Do you support Dark Theme for this App?")
-                user_feedback1 = collector.st_feedback(
-                component="DarkUIResponse",
-                feedback_type="thumbs",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                key=st.session_state.feedback_key,
-                align="center")
-    
-                st.write("How do you feel about the App idea?")
-                user_feedback2 = collector.st_feedback(
-                component="IdeaResponse",
-                feedback_type="faces",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                key=st.session_state.feedback_key,
-                align="center")
-    
-                st.write("[Optional] Provide any additional feedback about the App")
-                user_feedback3 = collector.st_feedback(
-                component="FeedbackResponse",
-                feedback_type="textbox",
-                textbox_type="text-input",
-                open_feedback_label="",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                key=st.session_state.feedback_key,
-                align="center") 
-    
-                submitted1 = st.form_submit_button('Submit Feedback')
+        # if st.session_state.feedback_key==0:
+        with st.form(key='feedback_key'):
+            st.write("Do you support Dark Theme for this App?")
+            user_feedback1 = collector.st_feedback(
+            component="DarkUIResponse",
+            feedback_type="thumbs",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            key=st.session_state.feedback_key,
+            align="center")
+
+            st.write("How do you feel about the App idea?")
+            user_feedback2 = collector.st_feedback(
+            component="IdeaResponse",
+            feedback_type="faces",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            key=st.session_state.feedback_key,
+            align="center")
+
+            st.write("[Optional] Provide any additional feedback about the App")
+            user_feedback3 = collector.st_feedback(
+            component="FeedbackResponse",
+            feedback_type="textbox",
+            textbox_type="text-input",
+            open_feedback_label="",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            key=st.session_state.feedback_key,
+            align="center") 
+
+            submitted1 = st.form_submit_button('Submit Feedback')
             
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
