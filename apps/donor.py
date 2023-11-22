@@ -62,36 +62,36 @@ def app():
 
         with st.form(key='my_form'):
             st.write("Do you support Dark Theme for this App?")
-                user_feedback1 = collector.st_feedback(
-                component="DarkUIResponse",
-                feedback_type="thumbs",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                align="center")
-    
-                st.write("How do you feel about the App idea?")
-                user_feedback2 = collector.st_feedback(
-                component="IdeaResponse",
-                feedback_type="faces",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                align="center")
-    
-                st.write("[Optional] Provide any additional feedback about the App")
-                user_feedback3 = collector.st_feedback(
-                component="FeedbackResponse",
-                feedback_type="textbox",
-                textbox_type="text-input",
-                open_feedback_label="",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                align="center") 
-    
-                submitted1 = st.form_submit_button('Submit Feedback')
-                
-            if submitted1:
-                st.toast("Thank You for Using Food Bank!")
+            user_feedback1 = collector.st_feedback(
+            component="DarkUIResponse",
+            feedback_type="thumbs",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            align="center")
+
+            st.write("How do you feel about the App idea?")
+            user_feedback2 = collector.st_feedback(
+            component="IdeaResponse",
+            feedback_type="faces",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            align="center")
+
+            st.write("[Optional] Provide any additional feedback about the App")
+            user_feedback3 = collector.st_feedback(
+            component="FeedbackResponse",
+            feedback_type="textbox",
+            textbox_type="text-input",
+            open_feedback_label="",
+            model=model,
+            metadata={"input_features":features, "predicted_class": prediction},
+            save_to_trubrics=True,
+            align="center") 
+
+            submitted1 = st.form_submit_button('Submit Feedback')
+            
+        if submitted1:
+            st.toast("Thank You for Using Food Bank!")
 
