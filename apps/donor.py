@@ -72,6 +72,7 @@ def app():
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
+                key=st.session_state.feedback_key,
                 align="center")
     
                 st.write("How do you feel about the App idea?")
@@ -81,6 +82,7 @@ def app():
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
+                key=st.session_state.feedback_key,
                 align="center")
     
                 st.write("[Optional] Provide any additional feedback about the App")
@@ -92,6 +94,7 @@ def app():
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
+                key=st.session_state.feedback_key,
                 align="center") 
     
                 submitted1 = st.form_submit_button('Submit Feedback')
