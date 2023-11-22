@@ -56,6 +56,8 @@ def app():
     }
     </style>""", unsafe_allow_html=True)
 
+    def stable():
+        st.session_state["feedback_key"] = 0
 
     if st.button('Find NGO'):
         features_lst = list(features.values())
@@ -102,9 +104,9 @@ def app():
             key=st.session_state.key_3,
             save_to_trubrics=True,
             align="center") 
-            st.write(st.session_state.key_3)
-            submitted1 = st.form_submit_button('Submit Feedback')
-        st.write(st.session_state.key_3)    
+            
+            submitted1 = st.form_submit_button('Submit Feedback', on_click=stable)
+        
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
             # st.session_state.feedback_key += 1
