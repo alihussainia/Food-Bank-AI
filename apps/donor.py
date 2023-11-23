@@ -12,13 +12,6 @@ model = load('models/food_banks.joblib')
 
 if 'count' not in st.session_state:
 	st.session_state.count = 0
-    
-# if "key_1" not in st.session_state:
-#     st.session_state["key_1"] = 1
-# if "key_2" not in st.session_state:
-#     st.session_state["key_2"] = 2
-# if "key_3" not in st.session_state:
-#     st.session_state["key_3"] = 3
 
 submitted1 = None
 collector = FeedbackCollector(
@@ -97,21 +90,22 @@ def app():
                 save_to_trubrics=True,
                 key=st.session_state.count,
                 align="center")
-            if user_feedback2:
-                st.session_state.count += 1
-                st.write("[Optional] Provide any additional feedback about the App")
-                user_feedback3 = collector.st_feedback(
-                component="FeedbackResponse",
-                feedback_type="textbox",
-                textbox_type="text-input",
-                open_feedback_label="",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                key=st.session_state.count,
-                save_to_trubrics=True,
-                align="center") 
+		
+		if user_feedback2:
+			st.session_state.count += 1
+			st.write("[Optional] Provide any additional feedback about the App")
+			user_feedback3 = collector.st_feedback(
+			component="FeedbackResponse",
+			feedback_type="textbox",
+			textbox_type="text-input",
+			open_feedback_label="",
+			model=model,
+			metadata={"input_features":features, "predicted_class": prediction},
+			key=st.session_state.count,
+			save_to_trubrics=True,
+			align="center") 
             
-                submitted1 = st.form_submit_button('Submit Feedback')
+        	submitted1 = st.form_submit_button('Submit Feedback')
         
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
