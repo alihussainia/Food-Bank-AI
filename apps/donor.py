@@ -80,7 +80,7 @@ def app():
 
             user_feedback = trubrics.log_feedback(
                 component="default",
-                model=user_prompt.config_model.model,
+                model=model,
                 prompt_id=user_prompt.id,
                 user_response={
                     "type": "thumbs",
