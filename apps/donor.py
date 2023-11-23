@@ -72,7 +72,8 @@ def app():
                 feedback_type="thumbs",
                 model="foodbank",
                 prompt_id=None,
-                metadata={"input_features":features, "predicted_class": prediction},
+                open_feedback_label="",
+                #metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center")
 
@@ -111,7 +112,7 @@ def app():
             
             submitted = st.form_submit_button()
         
-        if submitted:
+        if submitted and st.session_state.my_form:
             st.session_state.my_form = None
             st.toast("Thank You for Using Food Bank!")
             # st.write(user_feedback1)
