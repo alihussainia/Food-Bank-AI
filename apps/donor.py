@@ -68,16 +68,27 @@ def app():
         
         with st.form(key="my_form"):
             st.write("Do you support Dark Theme for this App?")
+            # user_feedback = trubrics.log_feedback(
+            #     component="default",
+            #     feedback_type="thumbs",
+            #     model="foodbank",
+            #     prompt_id=None,
+            #     # open_feedback_label="",
+            #     #metadata={"input_features":features, "predicted_class": prediction},
+            #     save_to_trubrics=True,
+            #     align="center")
+
             user_feedback = trubrics.log_feedback(
                 component="default",
-                feedback_type="thumbs",
-                model="foodbank",
-                prompt_id=None,
-                # open_feedback_label="",
-                #metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                align="center")
-
+                model=user_prompt.config_model.model,
+                prompt_id=user_prompt.id,
+                user_response={
+                    "type": "thumbs",
+                    "score": "👎",
+                    "text": "Not a very funny joke...",
+                }
+            )
+            submitted = st.form_submit_button()
 
             # user_feedback1 = collector.st_feedback(
             #     component="DarkUIResponse",
@@ -111,7 +122,7 @@ def app():
             #     save_to_trubrics=True,
             #     align="center") 
             
-            submitted = st.form_submit_button()
+        #    submitted = st.form_submit_button()
         
         if submitted and st.session_state.my_form:
             st.session_state.my_form = None
