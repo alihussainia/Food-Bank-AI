@@ -54,7 +54,6 @@ def app():
 
     findNGO = st.button('Find NGO')  
     if findNGO:
-        st.session_state.count += 1
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict)
