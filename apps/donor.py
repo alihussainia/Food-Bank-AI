@@ -10,14 +10,6 @@ model = load('models/food_banks.joblib')
 if "my_form" not in st.session_state:
     st.session_state.my_form = None
 
-if 'count' not in st.session_state:
-	st.session_state.count = 0
-
-def update_counter():
-    
-    st.session_state.timing = st.session_state.update_time
-
-submitted = None
 collector = FeedbackCollector(
     email=st.secrets.TRUBRICS_EMAIL,
     password=st.secrets.TRUBRICS_PASSWORD,
@@ -75,14 +67,23 @@ def app():
         
         with st.form(key="my_form"):
             st.write("Do you support Dark Theme for this App?")
-            user_feedback1 = collector.st_feedback(
+            collector.st_feedback(
                 component="DarkUIResponse",
                 feedback_type="thumbs",
-                model=model,
+                model="foodbank",
+                prompt_id=None,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
-                key=st.session_state.count,
                 align="center")
+
+
+            # user_feedback1 = collector.st_feedback(
+            #     component="DarkUIResponse",
+            #     feedback_type="thumbs",
+            #     model=model,
+            #     metadata={"input_features":features, "predicted_class": prediction},
+            #     save_to_trubrics=True,
+            #     align="center")
             
             # st.session_state.count += 1
             # st.write("How do you feel about the App idea?")
@@ -113,7 +114,7 @@ def app():
         if submitted:
             st.session_state.my_form = None
             st.toast("Thank You for Using Food Bank!")
-            st.write(user_feedback1)
+            # st.write(user_feedback1)
             # st.write(user_feedback2)
             # st.write(user_feedback3)
             # st.session_state.feedback_key = 0
