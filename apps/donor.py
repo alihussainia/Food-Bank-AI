@@ -103,7 +103,7 @@ def app():
                 key=st.session_state.count,
                 save_to_trubrics=True,
                 align="center") 
-        submitted = st.form_submit_button()
+            submitted = st.form_submit_button()
         
         if submitted and st.session_state.my_form:
             st.session_state.my_form = None
