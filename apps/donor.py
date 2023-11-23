@@ -89,7 +89,7 @@ def app():
                 metadata={"input_features":features, "predicted_class": prediction},
                 key=st.session_state.count,
                 save_to_trubrics=True,
-                align="center") )
+                align="center")
             
             st.session_state.count += 1
             st.write("[Optional] Provide any additional feedback about the App")
