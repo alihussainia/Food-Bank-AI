@@ -81,7 +81,7 @@ def app():
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
-                #key=st.session_state.count,
+                key=st.session_state.count,
                 align="center")
             
             # st.session_state.count += 1
