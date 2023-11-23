@@ -66,7 +66,7 @@ def app():
 
         st.write('Please provide your feedback below :point_down:')
         
-        with st.form(key='count'):
+        with st.form("my_form"):
             st.write("Do you support Dark Theme for this App?")
             user_feedback1 = collector.st_feedback(
                 component="DarkUIResponse",
