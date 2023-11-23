@@ -7,11 +7,11 @@ from joblib import load
     
 model = load('models/food_banks.joblib')
 
-if "feedback_key" not in st.session_state:
-    st.session_state["feedback_key"] = 0
+# if "feedback_key" not in st.session_state:
+#     st.session_state["feedback_key"] = 0
 
-# if 'count' not in st.session_state:
-# 	st.session_state.count = 0
+if 'count' not in st.session_state:
+	st.session_state.count = 0
     
 # if "key_1" not in st.session_state:
 #     st.session_state["key_1"] = 1
@@ -60,9 +60,9 @@ def app():
     }
     </style>""", unsafe_allow_html=True)
 
-       
-    if st.button('Find NGO'):
-        st.session_state.feedback_key += 1
+    findNGO = st.button('Find NGO')  
+    if findNGO:
+        st.session_state.count += 1
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict)
@@ -84,10 +84,10 @@ def app():
             model=model,
             metadata={"input_features":features, "predicted_class": prediction},
             save_to_trubrics=True,
-            key=st.session_state.feedback_key,
+            key=st.session_state.count,
             align="center")
             if user_feedback1:
-                st.session_state.feedback_key += 1
+                st.session_state.count += 1
                 st.write("How do you feel about the App idea?")
                 user_feedback2 = collector.st_feedback(
                 component="IdeaResponse",
@@ -95,10 +95,10 @@ def app():
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
-                key=st.session_state.feedback_key,
+                key=st.session_state.count,
                 align="center")
             if user_feedback2:
-                st.session_state.feedback_key += 1
+                st.session_state.count += 1
                 st.write("[Optional] Provide any additional feedback about the App")
                 user_feedback3 = collector.st_feedback(
                 component="FeedbackResponse",
@@ -107,11 +107,11 @@ def app():
                 open_feedback_label="",
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
-                key=st.session_state.feedback_key,
+                key=st.session_state.count,
                 save_to_trubrics=True,
                 align="center") 
             
-            submitted1 = st.form_submit_button('Submit Feedback')
+                submitted1 = st.form_submit_button('Submit Feedback')
         
         if submitted1:
             st.toast("Thank You for Using Food Bank!")
