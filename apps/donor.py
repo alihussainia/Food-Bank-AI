@@ -11,7 +11,7 @@ if "my_form" not in st.session_state:
     st.session_state.my_form = None
 
 collector = FeedbackCollector(
-    project="Food-Bank-AI",
+    project="default",
     email=st.secrets.TRUBRICS_EMAIL,
     password=st.secrets.TRUBRICS_PASSWORD,)
     
@@ -68,7 +68,7 @@ def app():
         with st.form(key="my_form"):
             st.write("Do you support Dark Theme for this App?")
             collector.st_feedback(
-                component="DarkUIResponse",
+                component="default",
                 feedback_type="thumbs",
                 model="foodbank",
                 prompt_id=None,
