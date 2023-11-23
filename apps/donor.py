@@ -84,29 +84,29 @@ def app():
                 #key=st.session_state.count,
                 align="center")
             
-            st.session_state.count += 1
-            st.write("How do you feel about the App idea?")
-            user_feedback2 = collector.st_feedback(
-                component="IdeaResponse",
-                feedback_type="faces",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
-                #key=st.session_state.count,
-                align="center")
+            # st.session_state.count += 1
+            # st.write("How do you feel about the App idea?")
+            # user_feedback2 = collector.st_feedback(
+            #     component="IdeaResponse",
+            #     feedback_type="faces",
+            #     model=model,
+            #     metadata={"input_features":features, "predicted_class": prediction},
+            #     save_to_trubrics=True,
+            #     #key=st.session_state.count,
+            #     align="center")
             
-            st.session_state.count += 1
-            st.write("[Optional] Provide any additional feedback about the App")
-            user_feedback3 = collector.st_feedback(
-                component="FeedbackResponse",
-                feedback_type="textbox",
-                textbox_type="text-input",
-                open_feedback_label="",
-                model=model,
-                metadata={"input_features":features, "predicted_class": prediction},
-                #key=st.session_state.count,
-                save_to_trubrics=True,
-                align="center") 
+            # st.session_state.count += 1
+            # st.write("[Optional] Provide any additional feedback about the App")
+            # user_feedback3 = collector.st_feedback(
+            #     component="FeedbackResponse",
+            #     feedback_type="textbox",
+            #     textbox_type="text-input",
+            #     open_feedback_label="",
+            #     model=model,
+            #     metadata={"input_features":features, "predicted_class": prediction},
+            #     #key=st.session_state.count,
+            #     save_to_trubrics=True,
+            #     align="center") 
             
             submitted = st.form_submit_button()
         
@@ -114,8 +114,8 @@ def app():
             st.session_state.my_form = None
             st.toast("Thank You for Using Food Bank!")
             st.write(user_feedback1)
-            st.write(user_feedback2)
-            st.write(user_feedback3)
+            # st.write(user_feedback2)
+            # st.write(user_feedback3)
             # st.session_state.feedback_key = 0
             #st.experimental_rerun()
 
