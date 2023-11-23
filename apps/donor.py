@@ -2,7 +2,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from datasets.sweden_food_banks import sweden_food_banks_dict 
-from trubrics.integrations.streamlit import FeedbackCollector
+import os
+from trubrics import Trubrics
 from joblib import load
     
 model = load('models/food_banks.joblib')
@@ -10,10 +11,11 @@ model = load('models/food_banks.joblib')
 if "my_form" not in st.session_state:
     st.session_state.my_form = None
 
-collector = FeedbackCollector(
-    project="default",
-    email=st.secrets.TRUBRICS_EMAIL,
-    password=st.secrets.TRUBRICS_PASSWORD,)
+trubrics = Trubrics(
+    project="Food-Bank-AI",
+    email=os.environ["TRUBRICS_EMAIL"],
+    password=os.environ["TRUBRICS_PASSWORD"],
+)
     
 def app():
     global collector 
@@ -67,12 +69,12 @@ def app():
         
         with st.form(key="my_form"):
             st.write("Do you support Dark Theme for this App?")
-            collector.st_feedback(
+            user_feedback = trubrics.log_feedback(
                 component="default",
                 feedback_type="thumbs",
                 model="foodbank",
                 prompt_id=None,
-                open_feedback_label="",
+                # open_feedback_label="",
                 #metadata={"input_features":features, "predicted_class": prediction},
                 save_to_trubrics=True,
                 align="center")

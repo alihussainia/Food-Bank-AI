@@ -3,4 +3,4 @@ pandas
 joblib
 scikit-learn==1.2.2
 streamlit
-trubrics[streamlit]
+trubrics #[streamlit]
