@@ -7,8 +7,6 @@ from joblib import load
     
 model = load('models/food_banks.joblib')
 
-# if "feedback_key" not in st.session_state:
-#     st.session_state["feedback_key"] = 0
 
 if 'count' not in st.session_state:
 	st.session_state.count = 0
