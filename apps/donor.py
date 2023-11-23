@@ -87,9 +87,9 @@ def app():
                 feedback_type="faces",
                 model=model,
                 metadata={"input_features":features, "predicted_class": prediction},
-                save_to_trubrics=True,
                 key=st.session_state.count,
-                align="center")
+                save_to_trubrics=True,
+                align="center") )
             
             st.session_state.count += 1
             st.write("[Optional] Provide any additional feedback about the App")
