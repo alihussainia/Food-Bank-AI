@@ -11,9 +11,9 @@ if "my_form" not in st.session_state:
     st.session_state.my_form = None
 
 collector = FeedbackCollector(
+    project="Food-Bank-AI",
     email=st.secrets.TRUBRICS_EMAIL,
-    password=st.secrets.TRUBRICS_PASSWORD,
-    project="Food-Bank-AI")
+    password=st.secrets.TRUBRICS_PASSWORD,)
     
 def app():
     global collector 
