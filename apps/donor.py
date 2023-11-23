@@ -78,17 +78,17 @@ def app():
                 save_to_trubrics=True,
                 key=st.session_state.count,
                 align="center")
-                if user_feedback1:
-                    st.session_state.count += 1
-            		st.write("How do you feel about the App idea?")
-            		user_feedback2 = collector.st_feedback(
-                        component="IdeaResponse",
-            			feedback_type="faces",
-            			model=model,
-            			metadata={"input_features":features, "predicted_class": prediction},
-            			save_to_trubrics=True,
-            			key=st.session_state.count,
-            			align="center")
+        	if user_feedback1:
+        	    st.session_state.count += 1
+        		st.write("How do you feel about the App idea?")
+        		user_feedback2 = collector.st_feedback(
+        		component="IdeaResponse",
+        			feedback_type="faces",
+        			model=model,
+        			metadata={"input_features":features, "predicted_class": prediction},
+        			save_to_trubrics=True,
+        			key=st.session_state.count,
+        			align="center")
 		            
                 if user_feedback2:
                     st.session_state.count += 1
