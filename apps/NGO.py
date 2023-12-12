@@ -49,7 +49,7 @@ def app():
     </style>""", unsafe_allow_html=True)
  
  
-    if st.button('Find NGO'):
+    if st.button('Find Donor'):
         features_lst = list(features.values())
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict)
