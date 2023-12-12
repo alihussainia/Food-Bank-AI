@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import os
-from datasets.sweden_food_banks import sweden_food_banks_dict 
+from datasets.sweden_food_donors import sweden_food_donors_dict 
 from trubrics.integrations.streamlit import FeedbackCollector
 from joblib import load
 
@@ -54,7 +54,7 @@ def app():
         input_dict = np.array([features_lst])*1.0
         predictions = model.predict(input_dict)
         cls=np.argmax(predictions)
-        prediction=sweden_food_banks_dict[cls]
+        prediction=sweden_food_donors_dict[cls]
         
         st.write('Based on your acceptance level and food options, the most suitable Donor is '+ prediction)
  
